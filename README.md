@@ -20,7 +20,6 @@
 
 ## 🧭 About Me
 
-- 🎓 **M.S.** in Cyber Security @ [JNU](https://www.jnu.edu.cn) (Jinan University) · **B.S.** in Computer Science @ [NNU](https://www.njnu.edu.cn) (Nanjing Normal University)
 - 🔬 Researching **agent security** — minimal, runnable repros in [agent-reliability-repros](https://github.com/jayfeng7/agent-reliability-repros)
 - 📚 Currently learning **agent development**: frameworks, tool use, memory & generative UI
 - 🛡️ Background in **network intrusion detection** with ML/DL — UNSW-NB15 · CICIDS2017 · NSL-KDD
@@ -53,12 +52,6 @@
   <strong>Security</strong><br/>
   <img src="https://img.shields.io/badge/Wireshark-1679A7?style=flat-square&logo=wireshark&logoColor=white" alt="Wireshark" />
   <img src="https://img.shields.io/badge/Metasploit-2596CD?style=flat-square&logo=metasploit&logoColor=white" alt="Metasploit" />
-</p>
-
-## 🏀 Hobbies & Interests
-
-<p align="center">
-  <img src="https://img.shields.io/badge/%F0%9F%8F%80_Basketball-F88379?style=flat-square" alt="🏀 Basketball" />
 </p>
 
 ## 📊 GitHub Stats
