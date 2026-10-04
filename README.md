@@ -3,7 +3,7 @@
      本页面由 profile.yml 自动生成：请修改 profile.yml，不要直接改本文件。 -->
 
 <p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:6a11cb,50:8e2de2,100:2575fc&height=200&section=header&text=Hi%2C%20I%27m%20Jay&fontSize=52&fontColor=ffffff&fontAlignY=36&desc=AI%20Agents%20%C2%B7%20LLM%20Apps%20%C2%B7%20Security%20ML&descSize=17&descAlignY=62&animation=fadeIn" alt="header" width="100%" />
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:6a11cb,50:8e2de2,100:2575fc&height=160&section=header&text=Hi%2C%20I%27m%20Jay&fontSize=48&fontColor=ffffff&fontAlignY=40&desc=AI%20Agents%20%C2%B7%20LLM%20Apps%20%C2%B7%20Security%20ML&descSize=16&descAlignY=68&animation=fadeIn" alt="header" width="100%" />
 </p>
 
 <p align="center">
@@ -12,19 +12,15 @@
   </a>
 </p>
 
-<p align="center">
-  <img src="https://api.visitorbadge.io/api/VisitorHit?user=jayfeng7&repo=jayfeng7&type=ip" alt="profile views" />
-</p>
-
 ---
 
-## 🧭 About Me
-
-- 🔬 Researching **agent security** — minimal, runnable repros in [agent-reliability-repros](https://github.com/jayfeng7/agent-reliability-repros)
-- 📚 Currently learning **agent development**: frameworks, tool use, memory & generative UI
-- 🛡️ Background in **network intrusion detection** with ML/DL — UNSW-NB15 · CICIDS2017 · NSL-KDD
-- 👯 Looking to collaborate on open-source **AI agent tooling**
-- ⚡ Fun fact: I enjoy breaking agents until they behave
+| 🧭 **About Me** | |
+|---|---|
+| 🔬 | Researching **agent security** — minimal, runnable repros in [agent-reliability-repros](https://github.com/jayfeng7/agent-reliability-repros) |
+| 📚 | Currently learning **agent development**: frameworks, tool use, memory & generative UI |
+| 🛡️ | Background in **network intrusion detection** with ML/DL — UNSW-NB15 · CICIDS2017 · NSL-KDD |
+| 👯 | Looking to collaborate on open-source **AI agent tooling** |
+| ⚡ | Fun fact: I enjoy breaking agents until they behave |
 
 ## 🛠️ Tech Stack
 
@@ -35,21 +31,12 @@
 </p>
 
 <p align="center">
-  <strong>AI & Agents</strong><br/>
   <img src="https://img.shields.io/badge/OpenAI-412991?style=flat-square" alt="OpenAI" />
   <img src="https://img.shields.io/badge/LangChain-1C3C3C?style=flat-square&logo=langchain&logoColor=white" alt="LangChain" />
   <img src="https://img.shields.io/badge/Hugging_Face-FFD21E?style=flat-square&logo=huggingface&logoColor=black" alt="Hugging Face" />
-</p>
-
-<p align="center">
-  <strong>ML & Data</strong><br/>
   <img src="https://img.shields.io/badge/scikit--learn-F7931E?style=flat-square&logo=scikitlearn&logoColor=white" alt="scikit-learn" />
   <img src="https://img.shields.io/badge/pandas-150458?style=flat-square&logo=pandas&logoColor=white" alt="pandas" />
   <img src="https://img.shields.io/badge/numpy-013243?style=flat-square&logo=numpy&logoColor=white" alt="numpy" />
-</p>
-
-<p align="center">
-  <strong>Security</strong><br/>
   <img src="https://img.shields.io/badge/Wireshark-1679A7?style=flat-square&logo=wireshark&logoColor=white" alt="Wireshark" />
   <img src="https://img.shields.io/badge/Metasploit-2596CD?style=flat-square&logo=metasploit&logoColor=white" alt="Metasploit" />
 </p>
@@ -86,5 +73,5 @@
 ---
 
 <p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:6a11cb,50:8e2de2,100:2575fc&height=110&section=footer" alt="footer" width="100%" />
+  <img src="https://api.visitorbadge.io/api/VisitorHit?user=jayfeng7&repo=jayfeng7&type=ip" alt="profile views" /> &nbsp; Made with ❤️ by <b>jayfeng7</b> — keep building, keep breaking
 </p>

@@ -41,40 +41,18 @@ about:
 # 代号参考 https://skillicons.dev （支持 js, ts, python, react, vue, docker, mysql, c, cpp, go, rust ...）
 skills_icons: [js, ts, nodejs, python, pytorch, git, github, vscode, md]
 
-# ---------- 技术栈徽章（分组展示） ----------
-# 每个徽章：label 必填；color 十六进制背景色；logo 可选（名称见 https://simpleicons.org）
+# ---------- 技术栈徽章（单行展示） ----------
+# label 必填；color 十六进制背景色；logo 可选（名称见 https://simpleicons.org）
 # 注意：部分品牌的 logo 已从 simple-icons 下架（如 OpenAI / LinkedIn），会自动降级为纯文字徽章
-badge_groups:
-  - title: "AI & Agents"
-    badges:
-      - label: OpenAI
-        color: "412991"
-      - label: LangChain
-        color: "1C3C3C"
-        logo: langchain
-      - label: Hugging Face
-        color: "FFD21E"
-        logo: huggingface
-        logo_color: black
-  - title: "ML & Data"
-    badges:
-      - label: scikit-learn
-        color: "F7931E"
-        logo: scikitlearn
-      - label: pandas
-        color: "150458"
-        logo: pandas
-      - label: numpy
-        color: "013243"
-        logo: numpy
-  - title: "Security"
-    badges:
-      - label: Wireshark
-        color: "1679A7"
-        logo: wireshark
-      - label: Metasploit
-        color: "2596CD"
-        logo: metasploit
+badges:
+  - { label: OpenAI, color: "412991" }
+  - { label: LangChain, color: "1C3C3C", logo: langchain }
+  - { label: Hugging Face, color: "FFD21E", logo: huggingface, logo_color: black }
+  - { label: scikit-learn, color: "F7931E", logo: scikitlearn }
+  - { label: pandas, color: "150458", logo: pandas }
+  - { label: numpy, color: "013243", logo: numpy }
+  - { label: Wireshark, color: "1679A7", logo: wireshark }
+  - { label: Metasploit, color: "2596CD", logo: metasploit }
 
 # ---------- 兴趣爱好标签（已移到 GitHub 侧边栏 bio；想在 README 展示就取消注释） ----------
 # hobbies:
@@ -104,7 +82,11 @@ social:
 # ---------- 统计区开关与主题 ----------
 stats:
   theme: tokyonight       # 卡片主题：tokyonight / radical / gruvbox / dracula / onedark / transparent ...
-  show_visitors: true     # 访问量徽章
+  show_visitors: true     # 访问量徽章（显示在页脚）
   show_streak: true       # 连续提交卡片
   show_trophy: false      # 成就奖杯墙（现在仓库少，多为灰色 SECRET；活跃后可改成 true）
   show_snake: true        # 贡献贪吃蛇动画
+
+# ---------- 页脚文字（支持 Markdown 链接；留空则只显示访问量徽章） ----------
+footer:
+  text: "Made with ❤️ by **jayfeng7** — keep building, keep breaking"
