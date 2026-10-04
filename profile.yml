@@ -1,0 +1,93 @@
+# ======================================================================
+#  ✏️  个人主页内容配置文件 —— 改这里，主页自动跟着变
+#
+#  使用方法（三步）：
+#    1. 修改下面的内容（保持缩进结构不变，只改文字）
+#    2. 提交并推送：git add -A && git commit -m "update profile" && git push
+#       （或者直接在 GitHub 网页上编辑本文件）
+#    3. 等 1 分钟，GitHub Action 会自动重新生成 README.md，主页即更新
+#
+#  提示：# 开头是注释；用 UTF-8 编码保存；内容支持中英文混排
+# ======================================================================
+
+# 你的 GitHub 用户名（统计卡片、贪吃蛇都用它）
+username: jayfeng7
+
+# ---------- 顶部渐变横幅 ----------
+header:
+  title: "Hi, I'm Jay"                                  # 大标题
+  subtitle: "AI Agents · LLM Apps · Security ML"        # 副标题（留空 "" 则不显示）
+  colors: "0:6a11cb,50:8e2de2,100:2575fc"               # 渐变色，格式 起点:色值,中间:色值,终点:色值
+                                                        # 例如橙色系: "0:ff9966,100:ff5e62"
+
+# ---------- 打字机动画（一行一句，轮播显示） ----------
+typing:
+  - "Building reliable AI agents"
+  - "Exploring LLM apps & agent SDKs"
+  - "Network security meets machine learning"
+  - "Open source enthusiast"
+
+# ---------- About Me（一行一条，可用 Markdown 加粗/链接/emoji） ----------
+about:
+  - "🔭 I'm currently working on **[agent-reliability-repros](https://github.com/jayfeng7/agent-reliability-repros)** — minimal, runnable reproductions of agent SDK reliability issues"
+  - "🌱 Exploring the LLM app stack: **agent frameworks, memory layers, tool use & generative UI**"
+  - "🛡️ Background in **network intrusion detection** with ML/DL — UNSW-NB15 · CICIDS2017 · NSL-KDD"
+  - "👯 Looking to collaborate on open-source **AI agent tooling**"
+  - "⚡ Fun fact: I enjoy breaking agents until they behave"
+
+# ---------- 技术栈图标 ----------
+# 代号参考 https://skillicons.dev （支持 js, ts, python, react, vue, docker, mysql, c, cpp, go, rust ...）
+skills_icons: [js, ts, nodejs, python, pytorch, git, github, vscode, md]
+
+# ---------- 技术栈徽章（分组展示） ----------
+# 每个徽章：label 必填；color 十六进制背景色；logo 可选（名称见 https://simpleicons.org）
+# 注意：部分品牌的 logo 已从 simple-icons 下架（如 OpenAI / LinkedIn），会自动降级为纯文字徽章
+badge_groups:
+  - title: "AI & Agents"
+    badges:
+      - label: OpenAI
+        color: "412991"
+      - label: LangChain
+        color: "1C3C3C"
+        logo: langchain
+      - label: Hugging Face
+        color: "FFD21E"
+        logo: huggingface
+        logo_color: black
+  - title: "ML & Data"
+    badges:
+      - label: scikit-learn
+        color: "F7931E"
+        logo: scikitlearn
+      - label: pandas
+        color: "150458"
+        logo: pandas
+      - label: numpy
+        color: "013243"
+        logo: numpy
+  - title: "Security"
+    badges:
+      - label: Wireshark
+        color: "1679A7"
+        logo: wireshark
+      - label: Metasploit
+        color: "2596CD"
+        logo: metasploit
+
+# ---------- 联系方式 / 社交链接 ----------
+# 留空 "" 的项不显示；填了就会公开展示在主页，请自行斟酌隐私
+social:
+  email: ""           # 邮箱，例如 you@example.com（会公开，易被爬虫收集，谨慎填写）
+  blog: ""            # 博客 / 个人网站，例如 https://yourblog.dev
+  twitter: ""         # X（Twitter）用户名
+  linkedin: ""        # LinkedIn 用户名
+  bilibili: ""        # B 站 UID（space.bilibili.com/ 后面的纯数字）
+  zhihu: ""           # 知乎 ID（www.zhihu.com/people/ 后面那串）
+
+# ---------- 统计区开关与主题 ----------
+stats:
+  theme: tokyonight       # 卡片主题：tokyonight / radical / gruvbox / dracula / onedark / transparent ...
+  show_visitors: true     # 访问量徽章
+  show_streak: true       # 连续提交卡片
+  show_trophy: false      # 成就奖杯墙（现在仓库少，多为灰色 SECRET；活跃后可改成 true）
+  show_snake: true        # 贡献贪吃蛇动画
