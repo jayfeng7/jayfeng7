@@ -37,7 +37,7 @@
 
 <p align="center">
   <strong>AI &amp; Agents</strong><br/>
-  <img src="https://img.shields.io/badge/OpenAI-412991?style=flat-square&logo=openai&logoColor=white" alt="OpenAI" />
+  <img src="https://img.shields.io/badge/OpenAI-412991?style=flat-square" alt="OpenAI" />
   <img src="https://img.shields.io/badge/LangChain-1C3C3C?style=flat-square&logo=langchain&logoColor=white" alt="LangChain" />
   <img src="https://img.shields.io/badge/Hugging_Face-FFD21E?style=flat-square&logo=huggingface&logoColor=black" alt="Hugging Face" />
 </p>
@@ -61,7 +61,7 @@
   <table>
     <tr>
       <td align="center">
-        <img src="https://github-readme-stats.vercel.app/api?username=jayfeng7&show_icons=true&theme=tokyonight&hide_border=true&include_all_commits=true" alt="GitHub stats" height="165" />
+        <img src="https://github-readme-stats.vercel.app/api?username=jayfeng7&show_icons=true&theme=tokyonight&hide_border=true" alt="GitHub stats" height="165" />
       </td>
       <td align="center">
         <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=jayfeng7&layout=compact&theme=tokyonight&hide_border=true&langs_count=8" alt="Top languages" height="165" />
@@ -72,10 +72,6 @@
 
 <p align="center">
   <img src="https://streak-stats.demolab.com?user=jayfeng7&theme=tokyonight&hide_border=true" alt="GitHub streak" height="165" />
-</p>
-
-<p align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=jayfeng7&theme=tokyo-night&hide_border=true&area=true&custom_title=Contribution%20Activity" alt="Activity graph" width="100%" />
 </p>
 
 ## 🐍 Contribution Snake
