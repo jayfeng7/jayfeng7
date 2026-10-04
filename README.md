@@ -14,7 +14,7 @@
 </p>
 
 <p align="center">
-  <img src="https://komarev.com/ghpvc/?username=jayfeng7&style=flat-square&color=blueviolet&label=PROFILE+VIEWS&v=2" alt="profile views" />
+  <img src="https://api.visitorbadge.io/api/VisitorHit?user=jayfeng7&repo=jayfeng7&type=ip" alt="profile views" />
 </p>
 
 ---
