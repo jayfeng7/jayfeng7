@@ -106,6 +106,14 @@ for g in groups:
 if stack:
     sections.append("## 🛠️ Tech Stack\n\n" + "\n\n".join(stack))
 
+# ---- hobbies ----
+hobbies = cfg.get("hobbies") or []
+if hobbies:
+    row = "\n  ".join(
+        img(badge(h["label"], h.get("color", "36BCF7")), h["label"]) for h in hobbies
+    )
+    sections.append(f'## 🏀 Hobbies & Interests\n\n<p align="center">\n  {row}\n</p>')
+
 # ---- social links ----
 social_items: list[tuple[str, str, str, str | None]] = []
 if social.get("email"):
