@@ -75,7 +75,8 @@ def fmt_k(n: int) -> str:
 def stat_badge(label: str, value, color: str) -> str:
     left = quote(label.replace(" ", "_"))
     right = quote(str(value).replace(" ", "_"))
-    return f"https://img.shields.io/badge/{left}-{right}-24292F-{color}?style=flat-square"
+    # shields path form only supports label-message-color; labelColor must be a query param
+    return f"https://img.shields.io/badge/{left}-{right}-{color}?style=flat-square&labelColor=24292F"
 
 
 def lang_badge(lang: str | None) -> str:
