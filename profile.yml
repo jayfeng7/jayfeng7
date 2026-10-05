@@ -36,7 +36,11 @@ about:
   - "🛡️ Background in **network intrusion detection** with ML/DL — UNSW-NB15 · CICIDS2017 · NSL-KDD"
   - "👯 Looking to collaborate on open-source **AI agent tooling**"
   - "⚡ Fun fact: I enjoy breaking agents until they behave"
-    - "✅ **Merged contribution:** [deer-flow #6280](https://github.com/bytedance/deer-flow/pull/6280) — fixed local HTTP host classification and added regression tests (Python · Agent Security)."
+  - "🏆 **Merged:** [deer-flow#6280](https://github.com/bytedance/deer-flow/pull/6280) — fixed SkillScan host-case misclassification in security scanning (83k★ agent framework)"
+  - "✅ **Approved:** [QwenLM/qwen-code#13257](https://github.com/QwenLM/qwen-code/pull/13257) — regression tests pinning the beginTurn unfinished-invocation guard (3 sub-cases)"
+  - "🟡 **In review:** [vercel/ai#21997](https://github.com/vercel/ai/pull/21997) · [#21996](https://github.com/vercel/ai/pull/21996) — fixed nonexistent APIs & renamed exports in custom-provider docs"
+  - "🟡 **In review:** [mem0ai/mem0#7537](https://github.com/mem0ai/mem0/pull/7537) — o4 family misclassified as non-reasoning model"
+  - "🟡 **In review:** [TencentCloud/Octop#1643](https://github.com/TencentCloud/Octop/pull/1643) · [#1597](https://github.com/TencentCloud/Octop/pull/1597) — image MIME sniff fallback · ZIP work off the event loop"
 
 # ---------- 技术栈图标 ----------
 # 代号参考 https://skillicons.dev （支持 js, ts, python, react, vue, docker, mysql, c, cpp, go, rust ...）
