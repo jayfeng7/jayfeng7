@@ -42,6 +42,16 @@ about:
   - "🟡 **In review:** [mem0ai/mem0#7537](https://github.com/mem0ai/mem0/pull/7537) — o4 family misclassified as non-reasoning model"
   - "🟡 **In review:** [TencentCloud/Octop#1643](https://github.com/TencentCloud/Octop/pull/1643) · [#1597](https://github.com/TencentCloud/Octop/pull/1597) — image MIME sniff fallback · ZIP work off the event loop"
 
+# ---------- 开源贡献展示（Open Source，自动统计，无需手动维护） ----------
+# Actions 会调 GitHub API 统计"已被上游合并的 PR"，生成徽章 + 仓库表格。
+# enabled: 改 false 隐藏该区块
+# top: 表格最多列出的仓库数，其余并入"… and N more"一行
+# min_stars: 只统计星标 ≥ 该值的仓库（徽章与表格都按此过滤），0 = 不过滤
+opensource:
+  enabled: true
+  top: 5
+  min_stars: 0
+
 # ---------- 技术栈图标 ----------
 # 代号参考 https://skillicons.dev （支持 js, ts, python, react, vue, docker, mysql, c, cpp, go, rust ...）
 skills_icons: [js, ts, nodejs, python, pytorch, git, github, vscode, md]

@@ -27,6 +27,22 @@
 | 🟡 | **In review:** [mem0ai/mem0#7537](https://github.com/mem0ai/mem0/pull/7537) — o4 family misclassified as non-reasoning model |
 | 🟡 | **In review:** [TencentCloud/Octop#1643](https://github.com/TencentCloud/Octop/pull/1643) · [#1597](https://github.com/TencentCloud/Octop/pull/1597) — image MIME sniff fallback · ZIP work off the event loop |
 
+<!-- opensource:start -->
+## 🌱 Open Source
+
+Projects that have merged my pull requests, refreshed automatically by Actions. The badges count every merge; the table names the top repositories and the last row carries the rest. Individual pull requests are described in About Me above.
+
+<p align="center">
+  <img src="https://img.shields.io/badge/MERGED_PRS-1-24292F-2EA043?style=flat-square" alt="merged pull requests" /> &nbsp; <img src="https://img.shields.io/badge/PROJECTS-1-24292F-0969DA?style=flat-square" alt="projects" /> &nbsp; <img src="https://img.shields.io/badge/UPSTREAM_STARS-83.4k-24292F-B45309?style=flat-square" alt="upstream stars" />
+</p>
+
+| Project | ★ | Language | Merged |
+|---|---|---|---|
+| [<b>bytedance/deer-flow</b>](https://github.com/bytedance/deer-flow)<br>An open-source long-horizon SuperAgent harness that researches, codes, and creates. With the help of… | 83.4k | <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" alt="Python" /> | 1 |
+
+*Merges only, counted across upstream projects. Auto-refreshed by [.github/workflows/readme.yml](.github/workflows/readme.yml).*
+<!-- opensource:end -->
+
 ## 🛠️ Tech Stack
 
 <p align="center">

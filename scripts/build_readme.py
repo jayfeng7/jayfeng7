@@ -1,6 +1,9 @@
 #!/usr/bin/env python3
 """Rebuild README.md from profile.yml — profile.yml is the single source of truth."""
+import json
+import os
 import re
+import urllib.request
 from pathlib import Path
 from urllib.parse import quote
 
@@ -8,6 +11,9 @@ import yaml
 
 ROOT = Path(__file__).resolve().parents[1]
 cfg = yaml.safe_load((ROOT / "profile.yml").read_text(encoding="utf-8"))
+
+_readme_path = ROOT / "README.md"
+_existing_readme = _readme_path.read_text(encoding="utf-8") if _readme_path.exists() else ""
 
 user = cfg["username"]
 header = cfg.get("header") or {}
@@ -41,6 +47,139 @@ def md_to_html(s: str) -> str:
     s = re.sub(r"\*(.+?)\*", r"<i>\1</i>", s)
     s = re.sub(r"\[([^\]]+)\]\(([^)]+)\)", r'<a href="\2">\1</a>', s)
     return s
+
+
+# ---- open source: merged-PR showcase (auto-counted from the GitHub API) ----
+LANG_STYLE = {
+    "Python": ("3776AB", "python"),
+    "TypeScript": ("3178C6", "typescript"),
+    "JavaScript": ("F7DF1E", "javascript"),
+    "Go": ("00ADD8", "go"),
+    "Rust": ("DEA584", "rust"),
+    "Java": ("007396", "java"),
+    "C": ("555555", "c"),
+    "C++": ("00599C", "cplusplus"),
+    "C#": ("239120", "csharp"),
+    "Shell": ("89E051", "gnubash"),
+    "Vue": ("41B883", "vuedotjs"),
+    "Kotlin": ("7F52FF", "kotlin"),
+    "Swift": ("F05138", "swift"),
+    "Jupyter Notebook": ("DA5B0B", "jupyter"),
+}
+
+
+def fmt_k(n: int) -> str:
+    return f"{n / 1000:.1f}k" if n >= 1000 else str(n)
+
+
+def stat_badge(label: str, value, color: str) -> str:
+    left = quote(label.replace(" ", "_"))
+    right = quote(str(value).replace(" ", "_"))
+    return f"https://img.shields.io/badge/{left}-{right}-24292F-{color}?style=flat-square"
+
+
+def lang_badge(lang: str | None) -> str:
+    if not lang:
+        return "—"
+    color, logo = LANG_STYLE.get(lang, ("6E7681", None))
+    text = quote(lang.replace("-", "--").replace(" ", "_"))
+    extra = f"&logo={logo}&logoColor=white" if logo else ""
+    return f"https://img.shields.io/badge/{text}-{color}?style=flat-square{extra}"
+
+
+def gh_api(url: str) -> dict:
+    tok = os.environ.get("GITHUB_TOKEN") or os.environ.get("GH_TOKEN")
+    req = urllib.request.Request(
+        url, headers={"Accept": "application/vnd.github+json", "User-Agent": "profile-readme"}
+    )
+    if tok:
+        req.add_header("Authorization", "Bearer " + tok)
+    with urllib.request.urlopen(req, timeout=30) as resp:
+        return json.loads(resp.read().decode())
+
+
+def build_opensource(user: str, os_cfg: dict) -> str:
+    """Merged-PR showcase: three stat badges + a per-repo table sorted by stars."""
+    top_n = int(os_cfg.get("top", 5))
+    min_stars = int(os_cfg.get("min_stars", 0))
+    q = quote(f"type:pr author:{user} is:merged")
+    data = gh_api(f"https://api.github.com/search/issues?q={q}&per_page=100&sort=created&order=desc")
+    per_repo: dict[str, int] = {}
+    for it in data.get("items", []):
+        repo_url = (it.get("repository_url") or "").rstrip("/")
+        if not repo_url:
+            continue
+        owner, name = repo_url.split("/")[-2:]
+        if owner.lower() == user.lower():
+            continue  # own repos are not upstream projects
+        per_repo[f"{owner}/{name}"] = per_repo.get(f"{owner}/{name}", 0) + 1
+    repos = []
+    for full, merged in per_repo.items():
+        d = gh_api(f"https://api.github.com/repos/{full}")
+        stars = int(d.get("stargazers_count") or 0)
+        if stars < min_stars:
+            continue
+        repos.append(
+            {
+                "full": full,
+                "stars": stars,
+                "lang": d.get("language"),
+                "desc": (d.get("description") or "").strip(),
+                "merged": merged,
+            }
+        )
+    repos.sort(key=lambda r: r["stars"], reverse=True)
+    if not repos:
+        raise RuntimeError("no merged upstream PRs found yet")
+    shown, rest = repos[:top_n], repos[top_n:]
+
+    badges_row = " &nbsp; ".join(
+        img(
+            stat_badge(label, value, color),
+            alt,
+        )
+        for label, value, color, alt in [
+            ("MERGED PRS", sum(r["merged"] for r in repos), "2EA043", "merged pull requests"),
+            ("PROJECTS", len(repos), "0969DA", "projects"),
+            ("UPSTREAM STARS", fmt_k(sum(r["stars"] for r in repos)), "B45309", "upstream stars"),
+        ]
+    )
+    rows = []
+    for r in shown:
+        desc = r["desc"]
+        if len(desc) > 100:
+            desc = desc[:100].rstrip() + "…"
+        link = f'[<b>{r["full"]}</b>](https://github.com/{r["full"]})'
+        first_cell = f"{link}<br>{desc.replace('|', chr(92) + '|')}" if desc else link
+        rows.append(
+            f"| {first_cell} | {fmt_k(r['stars'])} "
+            f'| <img src="{lang_badge(r["lang"])}" alt="{r["lang"] or ""}" /> | {r["merged"]} |'
+        )
+    if rest:
+        rows.append(
+            f"| … and {len(rest)} more | {fmt_k(sum(r['stars'] for r in rest))} | — "
+            f"| {sum(r['merged'] for r in rest)} |"
+        )
+    scope = f" with ≥{min_stars} stars" if min_stars else ""
+    lines = [
+        "## 🌱 Open Source",
+        "",
+        "Projects that have merged my pull requests, refreshed automatically by Actions. "
+        "The badges count every merge; the table names the top repositories and the last row "
+        "carries the rest. Individual pull requests are described in About Me above.",
+        "",
+        '<p align="center">',
+        f"  {badges_row}",
+        "</p>",
+        "",
+        "| Project | ★ | Language | Merged |",
+        "|---|---|---|---|",
+        *rows,
+        "",
+        f"*Merges only, counted across upstream projects{scope}. "
+        f"Auto-refreshed by [.github/workflows/readme.yml](.github/workflows/readme.yml).*",
+    ]
+    return "\n".join(lines)
 
 
 sections: list[str] = []
@@ -84,6 +223,22 @@ if about:
         icon, text = (m.group(1), m.group(2)) if m else ("✨", str(line))
         rows.append(f"| {icon} | {str(text).replace('|', chr(92) + '|')} |")
     sections.append("| 🧭 **About Me** | |\n|---|---|\n" + "\n".join(rows))
+
+# ---- open source showcase: live stats, fall back to the previous block on API failure ----
+os_cfg = cfg.get("opensource") or {}
+if os_cfg.get("enabled", True):
+    block = None
+    try:
+        block = build_opensource(cfg["username"], os_cfg)
+    except Exception as e:
+        print(f"opensource: stats fetch failed ({e}) — keeping the previous block if present")
+        m = re.search(
+            r"<!-- opensource:start -->\n(.*?)\n?<!-- opensource:end -->", _existing_readme, re.S
+        )
+        if m:
+            block = m.group(1).rstrip()
+    if block:
+        sections.append("<!-- opensource:start -->\n" + block + "\n<!-- opensource:end -->")
 
 # ---- tech stack ----
 icons = [i for i in (cfg.get("skills_icons") or []) if str(i).strip()]

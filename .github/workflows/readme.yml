@@ -7,6 +7,8 @@ on:
       - "scripts/build_readme.py"
       - ".github/workflows/readme.yml"
   workflow_dispatch:
+  schedule:
+    - cron: "17 21 * * *"   # daily 21:17 UTC = 05:17 北京，避开 0 点拥挤段
 
 permissions:
   contents: write
@@ -29,6 +31,8 @@ jobs:
         run: pip install pyyaml
 
       - name: Rebuild README from profile.yml
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: python scripts/build_readme.py
 
       - name: Commit rebuilt README
