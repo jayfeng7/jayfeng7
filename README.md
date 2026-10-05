@@ -21,16 +21,11 @@
 | 🛡️ | Background in **network intrusion detection** with ML/DL — UNSW-NB15 · CICIDS2017 · NSL-KDD |
 | 👯 | Looking to collaborate on open-source **AI agent tooling** |
 | ⚡ | Fun fact: I enjoy breaking agents until they behave |
-| 🏆 | **Merged:** [deer-flow#6280](https://github.com/bytedance/deer-flow/pull/6280) — fixed SkillScan host-case misclassification in security scanning (83k★ agent framework) |
-| ✅ | **Approved:** [QwenLM/qwen-code#13257](https://github.com/QwenLM/qwen-code/pull/13257) — regression tests pinning the beginTurn unfinished-invocation guard (3 sub-cases) |
-| 🟡 | **In review:** [vercel/ai#21997](https://github.com/vercel/ai/pull/21997) · [#21996](https://github.com/vercel/ai/pull/21996) — fixed nonexistent APIs & renamed exports in custom-provider docs |
-| 🟡 | **In review:** [mem0ai/mem0#7537](https://github.com/mem0ai/mem0/pull/7537) — o4 family misclassified as non-reasoning model |
-| 🟡 | **In review:** [TencentCloud/Octop#1643](https://github.com/TencentCloud/Octop/pull/1643) · [#1597](https://github.com/TencentCloud/Octop/pull/1597) — image MIME sniff fallback · ZIP work off the event loop |
 
 <!-- opensource:start -->
 ## 🌱 Open Source
 
-Projects that have merged my pull requests, refreshed automatically by Actions. The badges count every merge; the table names the top repositories and the last row carries the rest. Individual pull requests are described in About Me above.
+Projects that have merged my pull requests, refreshed automatically by Actions. The badges count every merge; the table names the top repositories and the last row carries the rest. Individual pull requests are not listed here.
 
 <p align="center">
   <img src="https://img.shields.io/badge/MERGED_PRS-1-24292F-2EA043?style=flat-square" alt="merged pull requests" /> &nbsp; <img src="https://img.shields.io/badge/PROJECTS-1-24292F-0969DA?style=flat-square" alt="projects" /> &nbsp; <img src="https://img.shields.io/badge/UPSTREAM_STARS-83.4k-24292F-B45309?style=flat-square" alt="upstream stars" />

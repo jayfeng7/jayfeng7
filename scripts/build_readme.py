@@ -166,7 +166,7 @@ def build_opensource(user: str, os_cfg: dict) -> str:
         "",
         "Projects that have merged my pull requests, refreshed automatically by Actions. "
         "The badges count every merge; the table names the top repositories and the last row "
-        "carries the rest. Individual pull requests are described in About Me above.",
+        "carries the rest. Individual pull requests are not listed here.",
         "",
         '<p align="center">',
         f"  {badges_row}",
