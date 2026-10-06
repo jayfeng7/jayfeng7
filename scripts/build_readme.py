@@ -241,6 +241,18 @@ if os_cfg.get("enabled", True):
     if block:
         sections.append("<!-- opensource:start -->\n" + block + "\n<!-- opensource:end -->")
 
+# ---- achievements badges (curated in profile.yml: only earned ones) ----
+ach = cfg.get("achievements") or []
+if ach:
+    default_url = f"https://github.com/{user}?tab=achievements"
+    row = "\n  ".join(
+        f'<a href="{a.get("url") or default_url}">'
+        + img(stat_badge(a["label"], a.get("value", ""), a.get("color", "F7C948")), a["label"])
+        + "</a>"
+        for a in ach
+    )
+    sections.append("## 🏅 Achievements\n\n<p align=\"center\">\n  " + row + "\n</p>")
+
 # ---- tech stack ----
 icons = [i for i in (cfg.get("skills_icons") or []) if str(i).strip()]
 badges = cfg.get("badges") or []

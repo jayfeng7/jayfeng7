@@ -39,6 +39,12 @@ Projects that have merged my pull requests, refreshed automatically by Actions. 
 *Merges only, counted across upstream projects. Auto-refreshed by [.github/workflows/readme.yml](.github/workflows/readme.yml).*
 <!-- opensource:end -->
 
+## 🏅 Achievements
+
+<p align="center">
+  <a href="https://github.com/jayfeng7?tab=achievements"><img src="https://img.shields.io/badge/Pull_Shark-3_merged_PRs-F7C948?style=flat-square&labelColor=24292F" alt="Pull Shark" /></a>
+</p>
+
 ## 🛠️ Tech Stack
 
 <p align="center">

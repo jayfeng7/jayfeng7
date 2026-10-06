@@ -48,6 +48,11 @@ opensource:
   top: 5
   min_stars: 0
 
+# ---------- 成就徽章（GitHub Achievements，只列已获得的） ----------
+# 每获得一个新成就（如 Pull Shark 升级）就加一行；url 可选，默认指向成就页
+achievements:
+  - { label: "Pull Shark", value: "3 merged PRs", color: "F7C948" }
+
 # ---------- 技术栈图标 ----------
 # 代号参考 https://skillicons.dev （支持 js, ts, python, react, vue, docker, mysql, c, cpp, go, rust ...）
 skills_icons: [js, ts, nodejs, python, pytorch, git, github, vscode, md]
