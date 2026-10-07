@@ -33,7 +33,7 @@ Projects that have merged my pull requests, refreshed automatically by Actions. 
 
 | Project | ★ | Language | Merged |
 |---|---|---|---|
-| [<b>bytedance/deer-flow</b>](https://github.com/bytedance/deer-flow)<br>An open-source long-horizon SuperAgent harness that researches, codes, and creates. With the help of… | 83.4k | <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" alt="Python" /> | 3 |
+| [<b>bytedance/deer-flow</b>](https://github.com/bytedance/deer-flow)<br>An open-source long-horizon SuperAgent harness that researches, codes, and creates. With the help of… | 83.5k | <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" alt="Python" /> | 3 |
 | [<b>vercel/ai</b>](https://github.com/vercel/ai)<br>The AI Toolkit for TypeScript. From the creators of Next.js, the AI SDK is a free open-source librar… | 27.2k | <img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white" alt="TypeScript" /> | 1 |
 | [<b>assistant-ui/assistant-ui</b>](https://github.com/assistant-ui/assistant-ui)<br>Typescript/React Library for AI Chat 💬🚀 | 12.4k | <img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white" alt="TypeScript" /> | 1 |
 
