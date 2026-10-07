@@ -134,16 +134,35 @@ def build_opensource(user: str, os_cfg: dict) -> str:
         raise RuntimeError("no merged upstream PRs found yet")
     shown, rest = repos[:top_n], repos[top_n:]
 
+    # Bug reports authored upstream and closed as completed (= maintainers
+    # accepted/fixed them). Second search, filtered client-side by state_reason.
+    bugs_accepted = 0
+    try:
+        qi = quote(f"type:issue author:{user} is:closed is:public")
+        idata = gh_api(f"https://api.github.com/search/issues?q={qi}&per_page=100")
+        for it in idata.get("items", []):
+            repo_url = (it.get("repository_url") or "").rstrip("/")
+            owner = repo_url.split("/")[-2] if repo_url else ""
+            if it.get("state_reason") == "completed" and owner.lower() != user.lower():
+                bugs_accepted += 1
+    except Exception as e:
+        print(f"opensource: bug-report count failed ({e}); badge omitted")
+
+    badge_specs = [
+        ("MERGED PRS", sum(r["merged"] for r in repos), "2EA043", "merged pull requests"),
+        ("PROJECTS", len(repos), "0969DA", "projects"),
+        ("UPSTREAM STARS", fmt_k(sum(r["stars"] for r in repos)), "B45309", "upstream stars"),
+    ]
+    if bugs_accepted:
+        badge_specs.append(
+            ("BUGS ACCEPTED", bugs_accepted, "8957E5", "bug reports accepted upstream")
+        )
     badges_row = " &nbsp; ".join(
         img(
             stat_badge(label, value, color),
             alt,
         )
-        for label, value, color, alt in [
-            ("MERGED PRS", sum(r["merged"] for r in repos), "2EA043", "merged pull requests"),
-            ("PROJECTS", len(repos), "0969DA", "projects"),
-            ("UPSTREAM STARS", fmt_k(sum(r["stars"] for r in repos)), "B45309", "upstream stars"),
-        ]
+        for label, value, color, alt in badge_specs
     )
     rows = []
     for r in shown:
@@ -177,7 +196,8 @@ def build_opensource(user: str, os_cfg: dict) -> str:
         "|---|---|---|---|",
         *rows,
         "",
-        f"*Merges only, counted across upstream projects{scope}. "
+        f"*Merges only, counted across upstream projects{scope}; the bug badge counts "
+        f"my issue reports closed as completed upstream. "
         f"Auto-refreshed by [.github/workflows/readme.yml](.github/workflows/readme.yml).*",
     ]
     return "\n".join(lines)

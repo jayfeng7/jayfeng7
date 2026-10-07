@@ -28,7 +28,7 @@
 Projects that have merged my pull requests, refreshed automatically by Actions. The badges count every merge; the table names the top repositories and the last row carries the rest. Individual pull requests are not listed here.
 
 <p align="center">
-  <img src="https://img.shields.io/badge/MERGED_PRS-5-2EA043?style=flat-square&labelColor=24292F" alt="merged pull requests" /> &nbsp; <img src="https://img.shields.io/badge/PROJECTS-3-0969DA?style=flat-square&labelColor=24292F" alt="projects" /> &nbsp; <img src="https://img.shields.io/badge/UPSTREAM_STARS-123.0k-B45309?style=flat-square&labelColor=24292F" alt="upstream stars" />
+  <img src="https://img.shields.io/badge/MERGED_PRS-5-2EA043?style=flat-square&labelColor=24292F" alt="merged pull requests" /> &nbsp; <img src="https://img.shields.io/badge/PROJECTS-3-0969DA?style=flat-square&labelColor=24292F" alt="projects" /> &nbsp; <img src="https://img.shields.io/badge/UPSTREAM_STARS-123.0k-B45309?style=flat-square&labelColor=24292F" alt="upstream stars" /> &nbsp; <img src="https://img.shields.io/badge/BUGS_ACCEPTED-2-8957E5?style=flat-square&labelColor=24292F" alt="bug reports accepted upstream" />
 </p>
 
 | Project | ★ | Language | Merged |
@@ -37,7 +37,7 @@ Projects that have merged my pull requests, refreshed automatically by Actions. 
 | [<b>vercel/ai</b>](https://github.com/vercel/ai)<br>The AI Toolkit for TypeScript. From the creators of Next.js, the AI SDK is a free open-source librar… | 27.2k | <img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white" alt="TypeScript" /> | 1 |
 | [<b>assistant-ui/assistant-ui</b>](https://github.com/assistant-ui/assistant-ui)<br>Typescript/React Library for AI Chat 💬🚀 | 12.4k | <img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white" alt="TypeScript" /> | 1 |
 
-*Merges only, counted across upstream projects. Auto-refreshed by [.github/workflows/readme.yml](.github/workflows/readme.yml).*
+*Merges only, counted across upstream projects; the bug badge counts my issue reports closed as completed upstream. Auto-refreshed by [.github/workflows/readme.yml](.github/workflows/readme.yml).*
 <!-- opensource:end -->
 
 ## 🏅 Achievements
