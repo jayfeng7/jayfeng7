@@ -25,10 +25,10 @@
 <!-- opensource:start -->
 ## 🌱 Open Source
 
-Projects that have merged my pull requests, refreshed automatically by Actions. The badges count every merge; the table names the top repositories and the last row carries the rest. Individual pull requests are not listed here.
+Projects that have merged my pull requests, refreshed automatically by Actions. The badges count every merge; the table names the top repositories and the last row carries the rest. Selected pull requests and reports are linked below.
 
 <p align="center">
-  <img src="https://img.shields.io/badge/MERGED_PRS-5-2EA043?style=flat-square&labelColor=24292F" alt="merged pull requests" /> &nbsp; <img src="https://img.shields.io/badge/PROJECTS-3-0969DA?style=flat-square&labelColor=24292F" alt="projects" /> &nbsp; <img src="https://img.shields.io/badge/UPSTREAM_STARS-123.0k-B45309?style=flat-square&labelColor=24292F" alt="upstream stars" /> &nbsp; <img src="https://img.shields.io/badge/BUGS_ACCEPTED-2-8957E5?style=flat-square&labelColor=24292F" alt="bug reports accepted upstream" />
+  <img src="https://img.shields.io/badge/MERGED_PRS-5-2EA043?style=flat-square&labelColor=24292F" alt="merged pull requests" /> &nbsp; <img src="https://img.shields.io/badge/PROJECTS-3-0969DA?style=flat-square&labelColor=24292F" alt="projects" /> &nbsp; <img src="https://img.shields.io/badge/UPSTREAM_STARS-123.0k-B45309?style=flat-square&labelColor=24292F" alt="upstream stars" /> &nbsp; <img src="https://img.shields.io/badge/REPORTS_COMPLETED-2-8957E5?style=flat-square&labelColor=24292F" alt="issue reports closed as completed" />
 </p>
 
 | Project | ★ | Language | Merged |
@@ -37,14 +37,29 @@ Projects that have merged my pull requests, refreshed automatically by Actions. 
 | [<b>vercel/ai</b>](https://github.com/vercel/ai)<br>The AI Toolkit for TypeScript. From the creators of Next.js, the AI SDK is a free open-source librar… | 27.2k | <img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white" alt="TypeScript" /> | 1 |
 | [<b>assistant-ui/assistant-ui</b>](https://github.com/assistant-ui/assistant-ui)<br>Typescript/React Library for AI Chat 💬🚀 | 12.4k | <img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white" alt="TypeScript" /> | 1 |
 
-*Merges only, counted across upstream projects; the bug badge counts my issue reports closed as completed upstream. Auto-refreshed by [.github/workflows/readme.yml](.github/workflows/readme.yml).*
+*Merges only, counted across upstream projects; the report badge counts my issue reports closed as completed upstream, not additional merged PRs. Auto-refreshed by [.github/workflows/readme.yml](.github/workflows/readme.yml).*
 <!-- opensource:end -->
 
-## 🏅 Achievements
+## 🔎 Selected Merged Contributions
 
-<p align="center">
-  <a href="https://github.com/jayfeng7?tab=achievements"><img src="https://img.shields.io/badge/Pull_Shark-3_merged_PRs-F7C948?style=flat-square&labelColor=24292F" alt="Pull Shark" /></a>
-</p>
+| Project | My contribution | Merged PR | Date (Asia/Shanghai) |
+|---|---|---|---|
+| bytedance/deer-flow | Normalize local HTTP host classification, including case, IPv6 and userinfo; add security-scanner regressions. | [#6280](https://github.com/bytedance/deer-flow/pull/6280) | 2026-10-05 |
+| bytedance/deer-flow | Detect download-to-shell pipe variants and real LF/CRLF continuations; remove exponential regex backtracking. | [#6312](https://github.com/bytedance/deer-flow/pull/6312) | 2026-10-05 |
+| bytedance/deer-flow | Bound skill-directory file reads before inspection to limit scanner memory use; add an oversized-file regression. | [#6359](https://github.com/bytedance/deer-flow/pull/6359) | 2026-10-06 |
+| vercel/ai | Correct Telnyx transcription and speech examples to use the SDK's stable export names. | [#21996](https://github.com/vercel/ai/pull/21996) | 2026-10-06 |
+| assistant-ui/assistant-ui | Repair the TAP example's client implementation link after its source directory moved. | [#8745](https://github.com/assistant-ui/assistant-ui/pull/8745) | 2026-10-06 |
+
+*Merge status checked on 2026-10-07. Prepared with AI assistance.*
+
+## 🧪 Bug Reports & Reproductions
+
+Reports and reproducible diagnostics are contributions too. The table states who implemented each fix.
+
+| Project | My contribution | Outcome | Evidence |
+|---|---|---|---|
+| mastra-ai/mastra | Published a runnable reproduction of cancelled fetches retrying through about 6 seconds of backoff. My contribution was diagnosis and reporting; the upstream fix was implemented by the project. | Upstream fix merged; alpha-channel release notified. Stable release not verified. | [Issue](https://github.com/mastra-ai/mastra/issues/25889) · [Upstream fix](https://github.com/mastra-ai/mastra/pull/26164) · [Reproduction](https://github.com/jayfeng7/agent-reliability-repros) |
+| bytedance/deer-flow | Reported unbounded skill-directory file reads with measured memory use and a reproduction, then submitted the bounded-read fix. | Fixed by my merged PR #6359 above; this is the same contribution, not an additional merged PR. | [Issue](https://github.com/bytedance/deer-flow/issues/6358) · [Upstream fix](https://github.com/bytedance/deer-flow/pull/6359) |
 
 ## 🛠️ Tech Stack
 

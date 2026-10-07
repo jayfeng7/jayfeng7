@@ -134,8 +134,8 @@ def build_opensource(user: str, os_cfg: dict) -> str:
         raise RuntimeError("no merged upstream PRs found yet")
     shown, rest = repos[:top_n], repos[top_n:]
 
-    # Bug reports authored upstream and closed as completed (= maintainers
-    # accepted/fixed them). Second search, filtered client-side by state_reason.
+    # Upstream reports closed as completed. Closure alone does not prove that
+    # a particular fix was implemented; curated evidence below supplies links.
     bugs_accepted = 0
     try:
         qi = quote(f"type:issue author:{user} is:closed is:public")
@@ -155,7 +155,7 @@ def build_opensource(user: str, os_cfg: dict) -> str:
     ]
     if bugs_accepted:
         badge_specs.append(
-            ("BUGS ACCEPTED", bugs_accepted, "8957E5", "bug reports accepted upstream")
+            ("REPORTS COMPLETED", bugs_accepted, "8957E5", "issue reports closed as completed")
         )
     badges_row = " &nbsp; ".join(
         img(
@@ -186,7 +186,7 @@ def build_opensource(user: str, os_cfg: dict) -> str:
         "",
         "Projects that have merged my pull requests, refreshed automatically by Actions. "
         "The badges count every merge; the table names the top repositories and the last row "
-        "carries the rest. Individual pull requests are not listed here.",
+        "carries the rest. Selected pull requests and reports are linked below.",
         "",
         '<p align="center">',
         f"  {badges_row}",
@@ -196,8 +196,8 @@ def build_opensource(user: str, os_cfg: dict) -> str:
         "|---|---|---|---|",
         *rows,
         "",
-        f"*Merges only, counted across upstream projects{scope}; the bug badge counts "
-        f"my issue reports closed as completed upstream. "
+        f"*Merges only, counted across upstream projects{scope}; the report badge counts "
+        f"my issue reports closed as completed upstream, not additional merged PRs. "
         f"Auto-refreshed by [.github/workflows/readme.yml](.github/workflows/readme.yml).*",
     ]
     return "\n".join(lines)
@@ -261,7 +261,47 @@ if os_cfg.get("enabled", True):
     if block:
         sections.append("<!-- opensource:start -->\n" + block + "\n<!-- opensource:end -->")
 
-# ---- achievements badges (curated in profile.yml: only earned ones) ----
+# ---- concrete contribution evidence (curated in profile.yml) ----
+evidence = cfg.get("contribution_evidence") or {}
+merged_evidence = evidence.get("merged") or []
+if merged_evidence:
+    rows = []
+    for item in merged_evidence:
+        number = item["url"].rstrip("/").split("/")[-1]
+        contribution = item["contribution"].replace("|", r"\|")
+        rows.append(
+            f'| {item["project"]} | {contribution} '
+            f'| [#{number}]({item["url"]}) | {item["merged_on"]} |'
+        )
+    sections.append(
+        "## 🔎 Selected Merged Contributions\n\n"
+        "| Project | My contribution | Merged PR | Date (Asia/Shanghai) |\n"
+        "|---|---|---|---|\n"
+        + "\n".join(rows)
+        + f'\n\n*Merge status checked on {evidence["checked_on"]}. '
+        "Prepared with AI assistance.*"
+    )
+
+report_evidence = evidence.get("reports") or []
+if report_evidence:
+    rows = []
+    for item in report_evidence:
+        links = f'[Issue]({item["issue"]}) · [Upstream fix]({item["fix"]})'
+        if item.get("repro"):
+            links += f' · [Reproduction]({item["repro"]})'
+        contribution = item["contribution"].replace("|", r"\|")
+        outcome = item["outcome"].replace("|", r"\|")
+        rows.append(f'| {item["project"]} | {contribution} | {outcome} | {links} |')
+    sections.append(
+        "## 🧪 Bug Reports & Reproductions\n\n"
+        "Reports and reproducible diagnostics are contributions too. "
+        "The table states who implemented each fix.\n\n"
+        "| Project | My contribution | Outcome | Evidence |\n"
+        "|---|---|---|---|\n"
+        + "\n".join(rows)
+    )
+
+# ---- optional custom milestone badges; GitHub's native achievements are in the sidebar ----
 ach = cfg.get("achievements") or []
 if ach:
     default_url = f"https://github.com/{user}?tab=achievements"
