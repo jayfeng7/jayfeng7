@@ -50,7 +50,7 @@ opensource:
 
 # ---------- 可核验的开源案例（合并记录与问题报告分别展示） ----------
 contribution_evidence:
-  checked_on: "2026-10-07"
+  checked_on: "2026-10-08"
   merged:
     - project: "bytedance/deer-flow"
       contribution: "Normalize local HTTP host classification, including case, IPv6 and userinfo; add security-scanner regressions."
@@ -84,6 +84,11 @@ contribution_evidence:
       issue: "https://github.com/bytedance/deer-flow/issues/6358"
       fix: "https://github.com/bytedance/deer-flow/pull/6359"
       outcome: "Fixed by my merged PR #6359 above; this is the same contribution, not an additional merged PR."
+    - project: "bytedance/deer-flow"
+      contribution: "Reported reproducible Windows MAX_PATH failures in document staging and router tests. My contribution was diagnosis and reporting; the extended-length path fix was implemented upstream by GodBlf."
+      issue: "https://github.com/bytedance/deer-flow/issues/6460"
+      fix: "https://github.com/bytedance/deer-flow/pull/6467"
+      outcome: "Upstream fix merged on 2026-10-08. Release version not verified."
 
 # GitHub 原生成就由平台在主页侧栏展示；README 统计图不代表已获颁原生成就。
 # 在能够核实实际成就前，不手工标注 Pull Shark 等成就。

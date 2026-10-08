@@ -28,7 +28,7 @@
 Projects that have merged my pull requests, refreshed automatically by Actions. The badges count every merge; the table names the top repositories and the last row carries the rest. Selected pull requests and reports are linked below.
 
 <p align="center">
-  <img src="https://img.shields.io/badge/MERGED_PRS-5-2EA043?style=flat-square&labelColor=24292F" alt="merged pull requests" /> &nbsp; <img src="https://img.shields.io/badge/PROJECTS-3-0969DA?style=flat-square&labelColor=24292F" alt="projects" /> &nbsp; <img src="https://img.shields.io/badge/UPSTREAM_STARS-123.1k-B45309?style=flat-square&labelColor=24292F" alt="upstream stars" /> &nbsp; <img src="https://img.shields.io/badge/REPORTS_COMPLETED-2-8957E5?style=flat-square&labelColor=24292F" alt="issue reports closed as completed" />
+  <img src="https://img.shields.io/badge/MERGED_PRS-5-2EA043?style=flat-square&labelColor=24292F" alt="merged pull requests" /> &nbsp; <img src="https://img.shields.io/badge/PROJECTS-3-0969DA?style=flat-square&labelColor=24292F" alt="projects" /> &nbsp; <img src="https://img.shields.io/badge/UPSTREAM_STARS-123.1k-B45309?style=flat-square&labelColor=24292F" alt="upstream stars" /> &nbsp; <img src="https://img.shields.io/badge/REPORTS_COMPLETED-3-8957E5?style=flat-square&labelColor=24292F" alt="issue reports closed as completed" />
 </p>
 
 | Project | ★ | Language | Merged |
@@ -50,7 +50,7 @@ Projects that have merged my pull requests, refreshed automatically by Actions. 
 | vercel/ai | Correct Telnyx transcription and speech examples to use the SDK's stable export names. | [#21996](https://github.com/vercel/ai/pull/21996) | 2026-10-06 |
 | assistant-ui/assistant-ui | Repair the TAP example's client implementation link after its source directory moved. | [#8745](https://github.com/assistant-ui/assistant-ui/pull/8745) | 2026-10-06 |
 
-*Merge status checked on 2026-10-07. Prepared with AI assistance.*
+*Merge status checked on 2026-10-08. Prepared with AI assistance.*
 
 ## 🧪 Bug Reports & Reproductions
 
@@ -60,6 +60,7 @@ Reports and reproducible diagnostics are contributions too. The table states who
 |---|---|---|---|
 | mastra-ai/mastra | Published a runnable reproduction of cancelled fetches retrying through about 6 seconds of backoff. My contribution was diagnosis and reporting; the upstream fix was implemented by the project. | Upstream fix merged; alpha-channel release notified. Stable release not verified. | [Issue](https://github.com/mastra-ai/mastra/issues/25889) · [Upstream fix](https://github.com/mastra-ai/mastra/pull/26164) · [Reproduction](https://github.com/jayfeng7/agent-reliability-repros) |
 | bytedance/deer-flow | Reported unbounded skill-directory file reads with measured memory use and a reproduction, then submitted the bounded-read fix. | Fixed by my merged PR #6359 above; this is the same contribution, not an additional merged PR. | [Issue](https://github.com/bytedance/deer-flow/issues/6358) · [Upstream fix](https://github.com/bytedance/deer-flow/pull/6359) |
+| bytedance/deer-flow | Reported reproducible Windows MAX_PATH failures in document staging and router tests. My contribution was diagnosis and reporting; the extended-length path fix was implemented upstream by GodBlf. | Upstream fix merged on 2026-10-08. Release version not verified. | [Issue](https://github.com/bytedance/deer-flow/issues/6460) · [Upstream fix](https://github.com/bytedance/deer-flow/pull/6467) |
 
 ## 🛠️ Tech Stack
 
