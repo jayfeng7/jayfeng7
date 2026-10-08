@@ -28,7 +28,7 @@
 Projects that have merged my pull requests, refreshed automatically by Actions. The badges count every merge; the table names the top repositories and the last row carries the rest. Selected pull requests and reports are linked below.
 
 <p align="center">
-  <img src="https://img.shields.io/badge/MERGED_PRS-5-2EA043?style=flat-square&labelColor=24292F" alt="merged pull requests" /> &nbsp; <img src="https://img.shields.io/badge/PROJECTS-3-0969DA?style=flat-square&labelColor=24292F" alt="projects" /> &nbsp; <img src="https://img.shields.io/badge/UPSTREAM_STARS-123.0k-B45309?style=flat-square&labelColor=24292F" alt="upstream stars" /> &nbsp; <img src="https://img.shields.io/badge/REPORTS_COMPLETED-2-8957E5?style=flat-square&labelColor=24292F" alt="issue reports closed as completed" />
+  <img src="https://img.shields.io/badge/MERGED_PRS-5-2EA043?style=flat-square&labelColor=24292F" alt="merged pull requests" /> &nbsp; <img src="https://img.shields.io/badge/PROJECTS-3-0969DA?style=flat-square&labelColor=24292F" alt="projects" /> &nbsp; <img src="https://img.shields.io/badge/UPSTREAM_STARS-123.1k-B45309?style=flat-square&labelColor=24292F" alt="upstream stars" /> &nbsp; <img src="https://img.shields.io/badge/REPORTS_COMPLETED-2-8957E5?style=flat-square&labelColor=24292F" alt="issue reports closed as completed" />
 </p>
 
 | Project | ★ | Language | Merged |
