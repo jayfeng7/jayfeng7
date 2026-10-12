@@ -50,8 +50,12 @@ opensource:
 
 # ---------- 可核验的开源案例（合并记录与问题报告分别展示） ----------
 contribution_evidence:
-  checked_on: "2026-10-08"
+  checked_on: "2026-10-12"
   merged:
+    - project: "bytedance/deer-flow"
+      contribution: "Preserve escaped pipes and empty cells in DingTalk Markdown tables; add parser and channel-adapter regressions."
+      url: "https://github.com/bytedance/deer-flow/pull/6741"
+      merged_on: "2026-10-12"
     - project: "bytedance/deer-flow"
       contribution: "Normalize local HTTP host classification, including case, IPv6 and userinfo; add security-scanner regressions."
       url: "https://github.com/bytedance/deer-flow/pull/6280"
