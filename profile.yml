@@ -50,8 +50,12 @@ opensource:
 
 # ---------- 可核验的开源案例（合并记录与问题报告分别展示） ----------
 contribution_evidence:
-  checked_on: "2026-10-12"
+  checked_on: "2026-10-13"
   merged:
+    - project: "QwenLM/qwen-code"
+      contribution: "Add regression tests pinning the unfinished-invocation guard that rejects a second submit while a turn is still running."
+      url: "https://github.com/QwenLM/qwen-code/pull/13257"
+      merged_on: "2026-10-13"
     - project: "bytedance/deer-flow"
       contribution: "Preserve escaped pipes and empty cells in DingTalk Markdown tables; add parser and channel-adapter regressions."
       url: "https://github.com/bytedance/deer-flow/pull/6741"
