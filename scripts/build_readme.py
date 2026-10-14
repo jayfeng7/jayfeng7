@@ -311,7 +311,11 @@ if ach:
         + "</a>"
         for a in ach
     )
-    sections.append("## 🏅 Achievements\n\n<p align=\"center\">\n  " + row + "\n</p>")
+    block = "## 🏅 Achievements\n\n<p align=\"center\">\n  " + row + "\n</p>"
+    notes = [str(a["note"]).strip() for a in ach if str(a.get("note") or "").strip()]
+    if notes:
+        block += "\n\n" + "\n\n".join(notes)
+    sections.append(block)
 
 # ---- tech stack ----
 icons = [i for i in (cfg.get("skills_icons") or []) if str(i).strip()]
