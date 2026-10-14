@@ -67,6 +67,12 @@ Reports and reproducible diagnostics are contributions too. The table states who
 | bytedance/deer-flow | Reported unbounded skill-directory file reads with measured memory use and a reproduction, then submitted the bounded-read fix. | Fixed by my merged PR #6359 above; this is the same contribution, not an additional merged PR. | [Issue](https://github.com/bytedance/deer-flow/issues/6358) · [Upstream fix](https://github.com/bytedance/deer-flow/pull/6359) |
 | bytedance/deer-flow | Reported reproducible Windows MAX_PATH failures in document staging and router tests. My contribution was diagnosis and reporting; the extended-length path fix was implemented upstream by GodBlf. | Upstream fix merged on 2026-10-08. Release version not verified. | [Issue](https://github.com/bytedance/deer-flow/issues/6460) · [Upstream fix](https://github.com/bytedance/deer-flow/pull/6467) |
 
+## 🏅 Achievements
+
+<p align="center">
+  <a href="https://github.com/xerj-org/xerj"><img src="https://img.shields.io/badge/XERJ_CORPUS_HUB-FEATURED-F7C948?style=flat-square&labelColor=24292F" alt="XERJ CORPUS HUB" /></a>
+</p>
+
 ## 🛠️ Tech Stack
 
 <p align="center">
