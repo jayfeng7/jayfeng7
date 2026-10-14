@@ -45,6 +45,8 @@ Projects that have merged my pull requests, refreshed automatically by Actions. 
 
 | Project | My contribution | Merged PR | Date (Asia/Shanghai) |
 |---|---|---|---|
+| bytedance/deer-flow | Bound the re-injected view_image context with per-request budgets (newest-first admission, skip-before-read placeholders) and made re-viewing an omitted image rescue it via a recency-aware merge reducer. | [#6829](https://github.com/bytedance/deer-flow/pull/6829) | 2026-10-13 |
+| bytedance/deer-flow | Treat a scalar buzz allowed_users entry as a single member pubkey instead of per-character iteration; add hex/npub/blank-shape regressions and align the config example notes. | [#6811](https://github.com/bytedance/deer-flow/pull/6811) | 2026-10-13 |
 | QwenLM/qwen-code | Add regression tests pinning the unfinished-invocation guard that rejects a second submit while a turn is still running. | [#13257](https://github.com/QwenLM/qwen-code/pull/13257) | 2026-10-13 |
 | bytedance/deer-flow | Preserve escaped pipes and empty cells in DingTalk Markdown tables; add parser and channel-adapter regressions. | [#6741](https://github.com/bytedance/deer-flow/pull/6741) | 2026-10-12 |
 | bytedance/deer-flow | Normalize local HTTP host classification, including case, IPv6 and userinfo; add security-scanner regressions. | [#6280](https://github.com/bytedance/deer-flow/pull/6280) | 2026-10-05 |
@@ -53,7 +55,7 @@ Projects that have merged my pull requests, refreshed automatically by Actions. 
 | vercel/ai | Correct Telnyx transcription and speech examples to use the SDK's stable export names. | [#21996](https://github.com/vercel/ai/pull/21996) | 2026-10-06 |
 | assistant-ui/assistant-ui | Repair the TAP example's client implementation link after its source directory moved. | [#8745](https://github.com/assistant-ui/assistant-ui/pull/8745) | 2026-10-06 |
 
-*Merge status checked on 2026-10-13. Prepared with AI assistance.*
+*Merge status checked on 2026-10-14. Prepared with AI assistance.*
 
 ## 🧪 Bug Reports & Reproductions
 
