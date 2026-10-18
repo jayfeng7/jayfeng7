@@ -50,16 +50,20 @@ opensource:
 
 # ---------- 可核验的开源案例（合并记录与问题报告分别展示） ----------
 contribution_evidence:
-  checked_on: "2026-10-14"
+  checked_on: "2026-10-18"
   merged:
+    - project: "bytedance/deer-flow"
+      contribution: "Preserve a concurrent peer's sandbox quarantine fence when directory retirement races a new record; add a deterministic concurrency regression."
+      url: "https://github.com/bytedance/deer-flow/pull/6961"
+      merged_on: "2026-10-17"
     - project: "bytedance/deer-flow"
       contribution: "Bound the re-injected view_image context with per-request budgets (newest-first admission, skip-before-read placeholders) and made re-viewing an omitted image rescue it via a recency-aware merge reducer."
       url: "https://github.com/bytedance/deer-flow/pull/6829"
-      merged_on: "2026-10-13"
+      merged_on: "2026-10-14"
     - project: "bytedance/deer-flow"
       contribution: "Treat a scalar buzz allowed_users entry as a single member pubkey instead of per-character iteration; add hex/npub/blank-shape regressions and align the config example notes."
       url: "https://github.com/bytedance/deer-flow/pull/6811"
-      merged_on: "2026-10-13"
+      merged_on: "2026-10-14"
     - project: "QwenLM/qwen-code"
       contribution: "Add regression tests pinning the unfinished-invocation guard that rejects a second submit while a turn is still running."
       url: "https://github.com/QwenLM/qwen-code/pull/13257"
