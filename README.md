@@ -28,7 +28,7 @@
 Projects that have merged my pull requests, refreshed automatically by Actions. The badges count every merge; the table names the top repositories and the last row carries the rest. Selected pull requests and reports are linked below.
 
 <p align="center">
-  <img src="https://img.shields.io/badge/MERGED_PRS-12-2EA043?style=flat-square&labelColor=24292F" alt="merged pull requests" /> &nbsp; <img src="https://img.shields.io/badge/PROJECTS-5-0969DA?style=flat-square&labelColor=24292F" alt="projects" /> &nbsp; <img src="https://img.shields.io/badge/UPSTREAM_STARS-163.3k-B45309?style=flat-square&labelColor=24292F" alt="upstream stars" /> &nbsp; <img src="https://img.shields.io/badge/REPORTS_COMPLETED-4-8957E5?style=flat-square&labelColor=24292F" alt="issue reports closed as completed" />
+  <img src="https://img.shields.io/badge/MERGED_PRS-12-2EA043?style=flat-square&labelColor=24292F" alt="merged pull requests" /> &nbsp; <img src="https://img.shields.io/badge/PROJECTS-5-0969DA?style=flat-square&labelColor=24292F" alt="projects" /> &nbsp; <img src="https://img.shields.io/badge/UPSTREAM_STARS-163.4k-B45309?style=flat-square&labelColor=24292F" alt="upstream stars" /> &nbsp; <img src="https://img.shields.io/badge/REPORTS_COMPLETED-4-8957E5?style=flat-square&labelColor=24292F" alt="issue reports closed as completed" />
 </p>
 
 | Project | ★ | Language | Merged |
@@ -46,6 +46,8 @@ Projects that have merged my pull requests, refreshed automatically by Actions. 
 
 | Project | My contribution | Merged PR | Date (Asia/Shanghai) |
 |---|---|---|---|
+| bytedance/deer-flow | Reject boolean values in the knowledge_search LightRAG / RAGFlow provider settings: Pydantic coerced `true` to 1 before the bounds ran, so a typo loaded the timeout as one second and top_k as one chunk; add regressions for both providers. | [#7042](https://github.com/bytedance/deer-flow/pull/7042) | 2026-10-20 |
+| TencentCloud/Octop | Make the frameless Linux desktop window edge- and corner-resizable: extend the injected drag overlay with the same hotzone detection the Wails runtime uses (5 px edges, 12 px corners) and dispatch wails:resize, while keeping a press that starts on a resize edge out of title-bar dragging. | [#1657](https://github.com/TencentCloud/Octop/pull/1657) | 2026-10-19 |
 | bytedance/deer-flow | Preserve a concurrent peer's sandbox quarantine fence when directory retirement races a new record; add a deterministic concurrency regression. | [#6961](https://github.com/bytedance/deer-flow/pull/6961) | 2026-10-17 |
 | bytedance/deer-flow | Bound the re-injected view_image context with per-request budgets (newest-first admission, skip-before-read placeholders) and made re-viewing an omitted image rescue it via a recency-aware merge reducer. | [#6829](https://github.com/bytedance/deer-flow/pull/6829) | 2026-10-14 |
 | bytedance/deer-flow | Treat a scalar buzz allowed_users entry as a single member pubkey instead of per-character iteration; add hex/npub/blank-shape regressions and align the config example notes. | [#6811](https://github.com/bytedance/deer-flow/pull/6811) | 2026-10-14 |
@@ -57,7 +59,7 @@ Projects that have merged my pull requests, refreshed automatically by Actions. 
 | vercel/ai | Correct Telnyx transcription and speech examples to use the SDK's stable export names. | [#21996](https://github.com/vercel/ai/pull/21996) | 2026-10-06 |
 | assistant-ui/assistant-ui | Repair the TAP example's client implementation link after its source directory moved. | [#8745](https://github.com/assistant-ui/assistant-ui/pull/8745) | 2026-10-06 |
 
-*Merge status checked on 2026-10-18. Prepared with AI assistance.*
+*Merge status checked on 2026-10-21. Prepared with AI assistance.*
 
 ## 🧪 Bug Reports & Reproductions
 
