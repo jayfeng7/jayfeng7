@@ -120,14 +120,14 @@ contribution_evidence:
 
 # GitHub 原生成就由平台在主页侧栏展示；README 统计图不代表已获颁原生成就。
 # 在能够核实实际成就前，不手工标注 Pull Shark 等成就。
-# 2026-10-14：XERJ（开源 AI 检索引擎，3.8k★）创始人邮件确认将 deer-flow #6829
-# （view_image 注入预算修复）收录进公共 Corpus Hub，作为 coding agents 检索的 worked reference。
+# 2026-10-21：XERJ 贡献者页面已公开；相关语料仍在许可证审核中，尚不可安装。
 achievements:
-  - label: "XERJ CORPUS HUB"
-    value: "FEATURED"
+  - label: "XERJ Corpus Hub contributor"
+    value: "SELECTED"
     color: "F7C948"
-    url: "https://github.com/xerj-org/xerj"
-    note: 'My deer-flow pull request [#6829](https://github.com/bytedance/deer-flow/pull/6829) — bounding the re-injected `view_image` context with per-request budgets (newest-first admission, skip-before-read placeholders, a recency-aware merge reducer) — was reviewed and selected by [XERJ](https://github.com/xerj-org/xerj), an open-source AI-native search engine, for its public Corpus Hub. Coding agents that hit the same class of problem retrieve this implementation as a worked reference instead of re-deriving it, with attribution to me and to bytedance/deer-flow under the repo''s MIT license.'
+    url: "https://hub.xerj.org/contributors/jayfeng7"
+    badge_url: "https://hub.xerj.org/contributors/jayfeng7/badge.svg"
+    note: 'My merged [deer-flow PR #6829](https://github.com/bytedance/deer-flow/pull/6829) bounds image context re-injection with per-request budgets, newest-first admission and skip-before-read checks. The contribution was selected for the [XERJ Corpus Hub](https://hub.xerj.org/contributors/jayfeng7) as a reference example for AI coding agents. My contributor page is public; corpus distribution is pending licence review as of October 21, 2026.'
 
 # ---------- 技术栈图标 ----------
 # 代号参考 https://skillicons.dev （支持 js, ts, python, react, vue, docker, mysql, c, cpp, go, rust ...）

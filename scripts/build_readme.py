@@ -307,7 +307,11 @@ if ach:
     default_url = f"https://github.com/{user}?tab=achievements"
     row = "\n  ".join(
         f'<a href="{a.get("url") or default_url}">'
-        + img(stat_badge(a["label"], a.get("value", ""), a.get("color", "F7C948")), a["label"])
+        + img(
+            a.get("badge_url")
+            or stat_badge(a["label"], a.get("value", ""), a.get("color", "F7C948")),
+            a["label"],
+        )
         + "</a>"
         for a in ach
     )

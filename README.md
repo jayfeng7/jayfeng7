@@ -74,10 +74,10 @@ Reports and reproducible diagnostics are contributions too. The table states who
 ## 🏅 Achievements
 
 <p align="center">
-  <a href="https://github.com/xerj-org/xerj"><img src="https://img.shields.io/badge/XERJ_CORPUS_HUB-FEATURED-F7C948?style=flat-square&labelColor=24292F" alt="XERJ CORPUS HUB" /></a>
+  <a href="https://hub.xerj.org/contributors/jayfeng7"><img src="https://hub.xerj.org/contributors/jayfeng7/badge.svg" alt="XERJ Corpus Hub contributor" /></a>
 </p>
 
-My deer-flow pull request [#6829](https://github.com/bytedance/deer-flow/pull/6829) — bounding the re-injected `view_image` context with per-request budgets (newest-first admission, skip-before-read placeholders, a recency-aware merge reducer) — was reviewed and selected by [XERJ](https://github.com/xerj-org/xerj), an open-source AI-native search engine, for its public Corpus Hub. Coding agents that hit the same class of problem retrieve this implementation as a worked reference instead of re-deriving it, with attribution to me and to bytedance/deer-flow under the repo's MIT license.
+My merged [deer-flow PR #6829](https://github.com/bytedance/deer-flow/pull/6829) bounds image context re-injection with per-request budgets, newest-first admission and skip-before-read checks. The contribution was selected for the [XERJ Corpus Hub](https://hub.xerj.org/contributors/jayfeng7) as a reference example for AI coding agents. My contributor page is public; corpus distribution is pending licence review as of October 21, 2026.
 
 ## 🛠️ Tech Stack
 
