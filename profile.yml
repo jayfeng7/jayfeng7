@@ -50,8 +50,16 @@ opensource:
 
 # ---------- 可核验的开源案例（合并记录与问题报告分别展示） ----------
 contribution_evidence:
-  checked_on: "2026-10-18"
+  checked_on: "2026-10-21"
   merged:
+    - project: "bytedance/deer-flow"
+      contribution: "Reject boolean values in the knowledge_search LightRAG / RAGFlow provider settings: Pydantic coerced `true` to 1 before the bounds ran, so a typo loaded the timeout as one second and top_k as one chunk; add regressions for both providers."
+      url: "https://github.com/bytedance/deer-flow/pull/7042"
+      merged_on: "2026-10-20"
+    - project: "TencentCloud/Octop"
+      contribution: "Make the frameless Linux desktop window edge- and corner-resizable: extend the injected drag overlay with the same hotzone detection the Wails runtime uses (5 px edges, 12 px corners) and dispatch wails:resize, while keeping a press that starts on a resize edge out of title-bar dragging."
+      url: "https://github.com/TencentCloud/Octop/pull/1657"
+      merged_on: "2026-10-19"
     - project: "bytedance/deer-flow"
       contribution: "Preserve a concurrent peer's sandbox quarantine fence when directory retirement races a new record; add a deterministic concurrency regression."
       url: "https://github.com/bytedance/deer-flow/pull/6961"
