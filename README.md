@@ -46,6 +46,8 @@ Projects that have merged my pull requests, refreshed automatically by Actions. 
 
 | Project | My contribution | Merged PR | Date (Asia/Shanghai) |
 |---|---|---|---|
+| bytedance/deer-flow | Make document chunk reads cancellation-safe across file-worker handoffs; retain opened handles and drain reads and cleanup before propagating cancellation. | [#7496](https://github.com/bytedance/deer-flow/pull/7496) | 2026-10-25 |
+| bytedance/deer-flow | Preserve link destinations in web_fetch on Windows when Readability extraction silently drops links; fall back to converting the resolved HTML. | [#7412](https://github.com/bytedance/deer-flow/pull/7412) | 2026-10-25 |
 | bytedance/deer-flow | Reject boolean values in the knowledge_search LightRAG / RAGFlow provider settings: Pydantic coerced `true` to 1 before the bounds ran, so a typo loaded the timeout as one second and top_k as one chunk; add regressions for both providers. | [#7042](https://github.com/bytedance/deer-flow/pull/7042) | 2026-10-20 |
 | TencentCloud/Octop | Make the frameless Linux desktop window edge- and corner-resizable: extend the injected drag overlay with the same hotzone detection the Wails runtime uses (5 px edges, 12 px corners) and dispatch wails:resize, while keeping a press that starts on a resize edge out of title-bar dragging. | [#1657](https://github.com/TencentCloud/Octop/pull/1657) | 2026-10-19 |
 | bytedance/deer-flow | Preserve a concurrent peer's sandbox quarantine fence when directory retirement races a new record; add a deterministic concurrency regression. | [#6961](https://github.com/bytedance/deer-flow/pull/6961) | 2026-10-17 |
@@ -59,7 +61,7 @@ Projects that have merged my pull requests, refreshed automatically by Actions. 
 | vercel/ai | Correct Telnyx transcription and speech examples to use the SDK's stable export names. | [#21996](https://github.com/vercel/ai/pull/21996) | 2026-10-06 |
 | assistant-ui/assistant-ui | Repair the TAP example's client implementation link after its source directory moved. | [#8745](https://github.com/assistant-ui/assistant-ui/pull/8745) | 2026-10-06 |
 
-*Merge status checked on 2026-10-21. Prepared with AI assistance.*
+*Merge status checked on 2026-10-26. Prepared with AI assistance.*
 
 ## 🧪 Bug Reports & Reproductions
 

@@ -50,8 +50,16 @@ opensource:
 
 # ---------- 可核验的开源案例（合并记录与问题报告分别展示） ----------
 contribution_evidence:
-  checked_on: "2026-10-21"
+  checked_on: "2026-10-26"
   merged:
+    - project: "bytedance/deer-flow"
+      contribution: "Make document chunk reads cancellation-safe across file-worker handoffs; retain opened handles and drain reads and cleanup before propagating cancellation."
+      url: "https://github.com/bytedance/deer-flow/pull/7496"
+      merged_on: "2026-10-25"
+    - project: "bytedance/deer-flow"
+      contribution: "Preserve link destinations in web_fetch on Windows when Readability extraction silently drops links; fall back to converting the resolved HTML."
+      url: "https://github.com/bytedance/deer-flow/pull/7412"
+      merged_on: "2026-10-25"
     - project: "bytedance/deer-flow"
       contribution: "Reject boolean values in the knowledge_search LightRAG / RAGFlow provider settings: Pydantic coerced `true` to 1 before the bounds ran, so a typo loaded the timeout as one second and top_k as one chunk; add regressions for both providers."
       url: "https://github.com/bytedance/deer-flow/pull/7042"
