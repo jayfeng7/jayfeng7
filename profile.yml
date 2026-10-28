@@ -50,7 +50,7 @@ opensource:
 
 # ---------- 可核验的开源案例（合并记录与问题报告分别展示） ----------
 contribution_evidence:
-  checked_on: "2026-10-26"
+  checked_on: "2026-10-28"
   merged:
     - project: "bytedance/deer-flow"
       contribution: "Make document chunk reads cancellation-safe across file-worker handoffs; retain opened handles and drain reads and cleanup before propagating cancellation."
