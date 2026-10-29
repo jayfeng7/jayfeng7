@@ -61,7 +61,7 @@ Projects that have merged my pull requests, refreshed automatically by Actions. 
 | vercel/ai | Correct Telnyx transcription and speech examples to use the SDK's stable export names. | [#21996](https://github.com/vercel/ai/pull/21996) | 2026-10-06 |
 | assistant-ui/assistant-ui | Repair the TAP example's client implementation link after its source directory moved. | [#8745](https://github.com/assistant-ui/assistant-ui/pull/8745) | 2026-10-06 |
 
-*Merge status checked on 2026-10-28. Prepared with AI assistance.*
+*Merge status checked on 2026-10-29. Prepared with AI assistance.*
 
 ## 🧪 Bug Reports & Reproductions
 
@@ -69,6 +69,7 @@ Reports and reproducible diagnostics are contributions too. The table states who
 
 | Project | My contribution | Outcome | Evidence |
 |---|---|---|---|
+| pydantic/pydantic-ai | Reported the unresolvable RealtimeEvent public export and submitted a tested lazy-import fix in PR #10120. The maintainer explicitly credited my report and chose to remove the invalid export in a separate upstream PR. | [My PR #10120](https://github.com/pydantic/pydantic-ai/pull/10120) was closed in favor of the maintainer's alternative. [Maintainer acknowledgment](https://github.com/pydantic/pydantic-ai/pull/10120#issuecomment-6474965057); upstream PR #10189 is still open as of October 29, 2026. This is a credited bug report, not a merged PR of mine. | [Issue](https://github.com/pydantic/pydantic-ai/issues/10119) · [Upstream fix](https://github.com/pydantic/pydantic-ai/pull/10189) |
 | mastra-ai/mastra | Published a runnable reproduction of cancelled fetches retrying through about 6 seconds of backoff. My contribution was diagnosis and reporting; the upstream fix was implemented by the project. | Upstream fix merged; alpha-channel release notified. Stable release not verified. | [Issue](https://github.com/mastra-ai/mastra/issues/25889) · [Upstream fix](https://github.com/mastra-ai/mastra/pull/26164) · [Reproduction](https://github.com/jayfeng7/agent-reliability-repros) |
 | bytedance/deer-flow | Reported unbounded skill-directory file reads with measured memory use and a reproduction, then submitted the bounded-read fix. | Fixed by my merged PR #6359 above; this is the same contribution, not an additional merged PR. | [Issue](https://github.com/bytedance/deer-flow/issues/6358) · [Upstream fix](https://github.com/bytedance/deer-flow/pull/6359) |
 | bytedance/deer-flow | Reported reproducible Windows MAX_PATH failures in document staging and router tests. My contribution was diagnosis and reporting; the extended-length path fix was implemented upstream by GodBlf. | Upstream fix merged on 2026-10-08. Release version not verified. | [Issue](https://github.com/bytedance/deer-flow/issues/6460) · [Upstream fix](https://github.com/bytedance/deer-flow/pull/6467) |

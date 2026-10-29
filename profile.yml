@@ -50,7 +50,7 @@ opensource:
 
 # ---------- 可核验的开源案例（合并记录与问题报告分别展示） ----------
 contribution_evidence:
-  checked_on: "2026-10-28"
+  checked_on: "2026-10-29"
   merged:
     - project: "bytedance/deer-flow"
       contribution: "Make document chunk reads cancellation-safe across file-worker handoffs; retain opened handles and drain reads and cleanup before propagating cancellation."
@@ -109,6 +109,11 @@ contribution_evidence:
       url: "https://github.com/assistant-ui/assistant-ui/pull/8745"
       merged_on: "2026-10-06"
   reports:
+    - project: "pydantic/pydantic-ai"
+      contribution: "Reported the unresolvable RealtimeEvent public export and submitted a tested lazy-import fix in PR #10120. The maintainer explicitly credited my report and chose to remove the invalid export in a separate upstream PR."
+      issue: "https://github.com/pydantic/pydantic-ai/issues/10119"
+      fix: "https://github.com/pydantic/pydantic-ai/pull/10189"
+      outcome: "[My PR #10120](https://github.com/pydantic/pydantic-ai/pull/10120) was closed in favor of the maintainer's alternative. [Maintainer acknowledgment](https://github.com/pydantic/pydantic-ai/pull/10120#issuecomment-6474965057); upstream PR #10189 is still open as of October 29, 2026. This is a credited bug report, not a merged PR of mine."
     - project: "mastra-ai/mastra"
       contribution: "Published a runnable reproduction of cancelled fetches retrying through about 6 seconds of backoff. My contribution was diagnosis and reporting; the upstream fix was implemented by the project."
       issue: "https://github.com/mastra-ai/mastra/issues/25889"
