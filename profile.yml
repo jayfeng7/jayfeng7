@@ -52,7 +52,10 @@ opensource:
 contribution_evidence:
   checked_on: "2026-11-02"
   merged:
-    - project: "bytedance/deer-flow"
+    - project: "TencentCloud/Octop"
+      contribution: "Refresh AUTO agents whose harness config only carries a baked-in resolved fallback model when a provider is disabled: the selective reload impact set now includes them, so background paths (notably the memory-extraction aux LLM) stop calling the removed provider and stop logging `Unknown provider` on every session end; add impact-set and registry regressions."
+      url: "https://github.com/TencentCloud/Octop/pull/2394"
+      merged_on: "2026-11-02"
       contribution: "Make document chunk reads cancellation-safe across file-worker handoffs; retain opened handles and drain reads and cleanup before propagating cancellation."
       url: "https://github.com/bytedance/deer-flow/pull/7496"
       merged_on: "2026-10-25"
