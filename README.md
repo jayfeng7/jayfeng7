@@ -33,7 +33,7 @@ Projects that have merged my pull requests, refreshed automatically by Actions. 
 
 | Project | ★ | Language | Merged |
 |---|---|---|---|
-| [<b>bytedance/deer-flow</b>](https://github.com/bytedance/deer-flow)<br>An open-source long-horizon SuperAgent harness that researches, codes, and creates. With the help of… | 84.8k | <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" alt="Python" /> | 10 |
+| [<b>bytedance/deer-flow</b>](https://github.com/bytedance/deer-flow)<br>An open-source long-horizon SuperAgent harness that researches, codes, and creates. With the help of… | 84.9k | <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" alt="Python" /> | 10 |
 | [<b>QwenLM/qwen-code</b>](https://github.com/QwenLM/qwen-code)<br>An open-source AI coding agent that lives in your terminal. | 28.9k | <img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white" alt="TypeScript" /> | 1 |
 | [<b>vercel/ai</b>](https://github.com/vercel/ai)<br>The AI Toolkit for TypeScript. From the creators of Next.js, the AI SDK is a free open-source librar… | 27.7k | <img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white" alt="TypeScript" /> | 1 |
 | [<b>assistant-ui/assistant-ui</b>](https://github.com/assistant-ui/assistant-ui)<br>Typescript/React Library for AI Chat 💬🚀 | 12.9k | <img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white" alt="TypeScript" /> | 1 |
@@ -61,7 +61,7 @@ Projects that have merged my pull requests, refreshed automatically by Actions. 
 | vercel/ai | Correct Telnyx transcription and speech examples to use the SDK's stable export names. | [#21996](https://github.com/vercel/ai/pull/21996) | 2026-10-06 |
 | assistant-ui/assistant-ui | Repair the TAP example's client implementation link after its source directory moved. | [#8745](https://github.com/assistant-ui/assistant-ui/pull/8745) | 2026-10-06 |
 
-*Merge status checked on 2026-10-29. Prepared with AI assistance.*
+*Merge status checked on 2026-11-02. Prepared with AI assistance.*
 
 ## 🧪 Bug Reports & Reproductions
 
