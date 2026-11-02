@@ -28,7 +28,7 @@
 Projects that have merged my pull requests, refreshed automatically by Actions. The badges count every merge; the table names the top repositories and the last row carries the rest. Selected pull requests and reports are linked below.
 
 <p align="center">
-  <img src="https://img.shields.io/badge/MERGED_PRS-14-2EA043?style=flat-square&labelColor=24292F" alt="merged pull requests" /> &nbsp; <img src="https://img.shields.io/badge/PROJECTS-5-0969DA?style=flat-square&labelColor=24292F" alt="projects" /> &nbsp; <img src="https://img.shields.io/badge/UPSTREAM_STARS-165.7k-B45309?style=flat-square&labelColor=24292F" alt="upstream stars" /> &nbsp; <img src="https://img.shields.io/badge/REPORTS_COMPLETED-6-8957E5?style=flat-square&labelColor=24292F" alt="issue reports closed as completed" />
+  <img src="https://img.shields.io/badge/MERGED_PRS-15-2EA043?style=flat-square&labelColor=24292F" alt="merged pull requests" /> &nbsp; <img src="https://img.shields.io/badge/PROJECTS-5-0969DA?style=flat-square&labelColor=24292F" alt="projects" /> &nbsp; <img src="https://img.shields.io/badge/UPSTREAM_STARS-165.8k-B45309?style=flat-square&labelColor=24292F" alt="upstream stars" /> &nbsp; <img src="https://img.shields.io/badge/REPORTS_COMPLETED-6-8957E5?style=flat-square&labelColor=24292F" alt="issue reports closed as completed" />
 </p>
 
 | Project | ★ | Language | Merged |
@@ -37,7 +37,7 @@ Projects that have merged my pull requests, refreshed automatically by Actions. 
 | [<b>QwenLM/qwen-code</b>](https://github.com/QwenLM/qwen-code)<br>An open-source AI coding agent that lives in your terminal. | 28.9k | <img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white" alt="TypeScript" /> | 1 |
 | [<b>vercel/ai</b>](https://github.com/vercel/ai)<br>The AI Toolkit for TypeScript. From the creators of Next.js, the AI SDK is a free open-source librar… | 27.7k | <img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white" alt="TypeScript" /> | 1 |
 | [<b>assistant-ui/assistant-ui</b>](https://github.com/assistant-ui/assistant-ui)<br>Typescript/React Library for AI Chat 💬🚀 | 12.9k | <img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white" alt="TypeScript" /> | 1 |
-| [<b>TencentCloud/Octop</b>](https://github.com/TencentCloud/Octop)<br>A smarter, self-hosted AI assistant — multi-user, multi-agent. | 11.4k | <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" alt="Python" /> | 1 |
+| [<b>TencentCloud/Octop</b>](https://github.com/TencentCloud/Octop)<br>A smarter, self-hosted AI assistant — multi-user, multi-agent. | 11.4k | <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" alt="Python" /> | 2 |
 
 *Merges only, counted across upstream projects; the report badge counts my issue reports closed as completed upstream, not additional merged PRs. Auto-refreshed by [.github/workflows/readme.yml](.github/workflows/readme.yml).*
 <!-- opensource:end -->
@@ -46,7 +46,7 @@ Projects that have merged my pull requests, refreshed automatically by Actions. 
 
 | Project | My contribution | Merged PR | Date (Asia/Shanghai) |
 |---|---|---|---|
-| bytedance/deer-flow | Make document chunk reads cancellation-safe across file-worker handoffs; retain opened handles and drain reads and cleanup before propagating cancellation. | [#7496](https://github.com/bytedance/deer-flow/pull/7496) | 2026-10-25 |
+| TencentCloud/Octop | Make document chunk reads cancellation-safe across file-worker handoffs; retain opened handles and drain reads and cleanup before propagating cancellation. | [#7496](https://github.com/bytedance/deer-flow/pull/7496) | 2026-10-25 |
 | bytedance/deer-flow | Preserve link destinations in web_fetch on Windows when Readability extraction silently drops links; fall back to converting the resolved HTML. | [#7412](https://github.com/bytedance/deer-flow/pull/7412) | 2026-10-25 |
 | bytedance/deer-flow | Reject boolean values in the knowledge_search LightRAG / RAGFlow provider settings: Pydantic coerced `true` to 1 before the bounds ran, so a typo loaded the timeout as one second and top_k as one chunk; add regressions for both providers. | [#7042](https://github.com/bytedance/deer-flow/pull/7042) | 2026-10-20 |
 | TencentCloud/Octop | Make the frameless Linux desktop window edge- and corner-resizable: extend the injected drag overlay with the same hotzone detection the Wails runtime uses (5 px edges, 12 px corners) and dispatch wails:resize, while keeping a press that starts on a resize edge out of title-bar dragging. | [#1657](https://github.com/TencentCloud/Octop/pull/1657) | 2026-10-19 |
