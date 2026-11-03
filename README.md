@@ -64,6 +64,14 @@ Projects that have merged my pull requests, refreshed automatically by Actions. 
 
 *Merge status checked on 2026-11-02. Prepared with AI assistance.*
 
+## 🤝 Contributions Integrated Upstream
+
+| Project | My contribution | Integration evidence | Original PR | Date (Asia/Shanghai) |
+|---|---|---|---|---|
+| langflow-ai/langflow | Pin Playwright runner defaults to Ubuntu 24.04 across frontend CI and manual/reusable workflow entry points; restore browser installation for the frontend and IBM accessibility scan jobs. | [Merged #16064](https://github.com/langflow-ai/langflow/pull/16064) · [Co-authored commit](https://github.com/langflow-ai/langflow/commit/d336c4fff5c1ea19bab95dd0df112aec9cf53ace) | [#16105](https://github.com/langflow-ai/langflow/pull/16105) | 2026-11-03 |
+
+*Co-authored patches integrated via another upstream PR are tracked separately from my merged-PR total. Integration verified on 2026-11-03.*
+
 ## 🧪 Bug Reports & Reproductions
 
 Reports and reproducible diagnostics are contributions too. The table states who implemented each fix.

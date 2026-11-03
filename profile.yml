@@ -112,6 +112,14 @@ contribution_evidence:
       contribution: "Repair the TAP example's client implementation link after its source directory moved."
       url: "https://github.com/assistant-ui/assistant-ui/pull/8745"
       merged_on: "2026-10-06"
+  integrated_checked_on: "2026-11-03"
+  integrated:
+    - project: "langflow-ai/langflow"
+      contribution: "Pin Playwright runner defaults to Ubuntu 24.04 across frontend CI and manual/reusable workflow entry points; restore browser installation for the frontend and IBM accessibility scan jobs."
+      original_pr: "https://github.com/langflow-ai/langflow/pull/16105"
+      upstream_pr: "https://github.com/langflow-ai/langflow/pull/16064"
+      commit: "https://github.com/langflow-ai/langflow/commit/d336c4fff5c1ea19bab95dd0df112aec9cf53ace"
+      integrated_on: "2026-11-03"
   reports:
     - project: "pydantic/pydantic-ai"
       contribution: "Reported the unresolvable RealtimeEvent public export and submitted a tested lazy-import fix in PR #10120. The maintainer explicitly credited my report and chose to remove the invalid export in a separate upstream PR."

@@ -282,6 +282,30 @@ if merged_evidence:
         "Prepared with AI assistance.*"
     )
 
+integrated_evidence = evidence.get("integrated") or []
+if integrated_evidence:
+    rows = []
+    for item in integrated_evidence:
+        original_number = item["original_pr"].rstrip("/").split("/")[-1]
+        upstream_number = item["upstream_pr"].rstrip("/").split("/")[-1]
+        contribution = item["contribution"].replace("|", r"\|")
+        rows.append(
+            f'| {item["project"]} | {contribution} '
+            f'| [Merged #{upstream_number}]({item["upstream_pr"]}) '
+            f'· [Co-authored commit]({item["commit"]}) '
+            f'| [#{original_number}]({item["original_pr"]}) | {item["integrated_on"]} |'
+        )
+    sections.append(
+        "## 🤝 Contributions Integrated Upstream\n\n"
+        "| Project | My contribution | Integration evidence | Original PR | Date (Asia/Shanghai) |\n"
+        "|---|---|---|---|---|\n"
+        + "\n".join(rows)
+        + "\n\n*Co-authored patches integrated via another upstream PR are tracked separately "
+        "from my merged-PR total. Integration verified on "
+        + str(evidence["integrated_checked_on"])
+        + ".*"
+    )
+
 report_evidence = evidence.get("reports") or []
 if report_evidence:
     rows = []
