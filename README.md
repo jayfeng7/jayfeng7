@@ -28,16 +28,17 @@
 Projects that have merged my pull requests, refreshed automatically by Actions. The badges count every merge; the table names the top repositories and the last row carries the rest. Selected pull requests and reports are linked below.
 
 <p align="center">
-  <img src="https://img.shields.io/badge/MERGED_PRS-15-2EA043?style=flat-square&labelColor=24292F" alt="merged pull requests" /> &nbsp; <img src="https://img.shields.io/badge/PROJECTS-5-0969DA?style=flat-square&labelColor=24292F" alt="projects" /> &nbsp; <img src="https://img.shields.io/badge/UPSTREAM_STARS-166.4k-B45309?style=flat-square&labelColor=24292F" alt="upstream stars" /> &nbsp; <img src="https://img.shields.io/badge/REPORTS_COMPLETED-6-8957E5?style=flat-square&labelColor=24292F" alt="issue reports closed as completed" />
+  <img src="https://img.shields.io/badge/MERGED_PRS-16-2EA043?style=flat-square&labelColor=24292F" alt="merged pull requests" /> &nbsp; <img src="https://img.shields.io/badge/PROJECTS-6-0969DA?style=flat-square&labelColor=24292F" alt="projects" /> &nbsp; <img src="https://img.shields.io/badge/UPSTREAM_STARS-230.7k-B45309?style=flat-square&labelColor=24292F" alt="upstream stars" /> &nbsp; <img src="https://img.shields.io/badge/REPORTS_COMPLETED-6-8957E5?style=flat-square&labelColor=24292F" alt="issue reports closed as completed" />
 </p>
 
 | Project | ★ | Language | Merged |
 |---|---|---|---|
 | [<b>bytedance/deer-flow</b>](https://github.com/bytedance/deer-flow)<br>An open-source long-horizon SuperAgent harness that researches, codes, and creates. With the help of… | 85.0k | <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" alt="Python" /> | 10 |
+| [<b>upstash/context7</b>](https://github.com/upstash/context7)<br>Context7 Platform -- Up-to-date docs for AI agents | 64.2k | <img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white" alt="TypeScript" /> | 1 |
 | [<b>QwenLM/qwen-code</b>](https://github.com/QwenLM/qwen-code)<br>An open-source AI coding agent that lives in your terminal. | 29.0k | <img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white" alt="TypeScript" /> | 1 |
-| [<b>vercel/ai</b>](https://github.com/vercel/ai)<br>The AI Toolkit for TypeScript. From the creators of Next.js, the AI SDK is a free open-source librar… | 27.7k | <img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white" alt="TypeScript" /> | 1 |
+| [<b>vercel/ai</b>](https://github.com/vercel/ai)<br>The AI Toolkit for TypeScript. From the creators of Next.js, the AI SDK is a free open-source librar… | 27.8k | <img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white" alt="TypeScript" /> | 1 |
 | [<b>assistant-ui/assistant-ui</b>](https://github.com/assistant-ui/assistant-ui)<br>Typescript/React Library for AI Chat 💬🚀 | 13.0k | <img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white" alt="TypeScript" /> | 1 |
-| [<b>TencentCloud/Octop</b>](https://github.com/TencentCloud/Octop)<br>A smarter, self-hosted AI assistant — multi-user, multi-agent. | 11.6k | <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" alt="Python" /> | 2 |
+| … and 1 more | 11.7k | — | 2 |
 
 *Merges only, counted across upstream projects; the report badge counts my issue reports closed as completed upstream, not additional merged PRs. Auto-refreshed by [.github/workflows/readme.yml](.github/workflows/readme.yml).*
 <!-- opensource:end -->
@@ -46,6 +47,7 @@ Projects that have merged my pull requests, refreshed automatically by Actions. 
 
 | Project | My contribution | Merged PR | Date (Asia/Shanghai) |
 |---|---|---|---|
+| upstash/context7 | Preserve JSONC comments and layout when the Context7 CLI adds or removes MCP server entries. Edit the targeted entry in place, with a full rewrite fallback for missing, empty or unparseable configurations. | [#3508](https://github.com/upstash/context7/pull/3508) | 2026-11-05 |
 | TencentCloud/Octop | Refresh AUTO agents whose harness config only carries a baked-in resolved fallback model when a provider is disabled: the selective reload impact set now includes them, so background paths (notably the memory-extraction aux LLM) stop calling the removed provider and stop logging `Unknown provider` on every session end; add impact-set and registry regressions. | [#2394](https://github.com/TencentCloud/Octop/pull/2394) | 2026-11-02 |
 | bytedance/deer-flow | Make document chunk reads cancellation-safe across file-worker handoffs; retain opened handles and drain reads and cleanup before propagating cancellation. | [#7496](https://github.com/bytedance/deer-flow/pull/7496) | 2026-10-25 |
 | bytedance/deer-flow | Preserve link destinations in web_fetch on Windows when Readability extraction silently drops links; fall back to converting the resolved HTML. | [#7412](https://github.com/bytedance/deer-flow/pull/7412) | 2026-10-25 |
@@ -62,7 +64,7 @@ Projects that have merged my pull requests, refreshed automatically by Actions. 
 | vercel/ai | Correct Telnyx transcription and speech examples to use the SDK's stable export names. | [#21996](https://github.com/vercel/ai/pull/21996) | 2026-10-06 |
 | assistant-ui/assistant-ui | Repair the TAP example's client implementation link after its source directory moved. | [#8745](https://github.com/assistant-ui/assistant-ui/pull/8745) | 2026-10-06 |
 
-*Merge status checked on 2026-11-04. Prepared with AI assistance.*
+*Merge status checked on 2026-11-05. Prepared with AI assistance.*
 
 ## 🤝 Contributions Integrated Upstream
 

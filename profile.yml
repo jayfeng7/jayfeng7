@@ -50,8 +50,12 @@ opensource:
 
 # ---------- 可核验的开源案例（合并记录与问题报告分别展示） ----------
 contribution_evidence:
-  checked_on: "2026-11-04"
+  checked_on: "2026-11-05"
   merged:
+    - project: "upstash/context7"
+      contribution: "Preserve JSONC comments and layout when the Context7 CLI adds or removes MCP server entries. Edit the targeted entry in place, with a full rewrite fallback for missing, empty or unparseable configurations."
+      url: "https://github.com/upstash/context7/pull/3508"
+      merged_on: "2026-11-05"
     - project: "TencentCloud/Octop"
       contribution: "Refresh AUTO agents whose harness config only carries a baked-in resolved fallback model when a provider is disabled: the selective reload impact set now includes them, so background paths (notably the memory-extraction aux LLM) stop calling the removed provider and stop logging `Unknown provider` on every session end; add impact-set and registry regressions."
       url: "https://github.com/TencentCloud/Octop/pull/2394"
