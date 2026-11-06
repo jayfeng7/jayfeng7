@@ -2,25 +2,41 @@
      Edit profile.yml (repo root), push, and Actions rebuilds this page.
      本页面由 profile.yml 自动生成：请修改 profile.yml，不要直接改本文件。 -->
 
-<p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:6a11cb,50:8e2de2,100:2575fc&height=160&section=header&text=Hi%2C%20I%27m%20Jay&fontSize=48&fontColor=ffffff&fontAlignY=40&desc=AI%20Agents%20%C2%B7%20LLM%20Apps%20%C2%B7%20Security%20ML&descSize=16&descAlignY=68&animation=fadeIn" alt="header" width="100%" />
-</p>
+![Jay](assets/profile-banner.svg)
 
-<p align="center">
-  <a href="https://github.com/jayfeng7">
-    <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=22&duration=3500&pause=1000&color=6C9BFF&center=true&vCenter=true&width=720&height=70&lines=Building%20reliable%20AI%20agents;Exploring%20LLM%20apps%20%26%20agent%20SDKs;Network%20security%20meets%20machine%20learning;Open%20source%20enthusiast" alt="Typing SVG" />
-  </a>
-</p>
+**AI Agents · Full-stack Applications · Agent Reliability**
 
----
+我做 AI Agent 应用，也关注工具调用、取消处理和安全边界。网络安全背景，目前在暨南大学学习。
 
-| 🧭 **About Me** | |
-|---|---|
-| 🔬 | Researching **agent security** — minimal, runnable repros in [agent-reliability-repros](https://github.com/jayfeng7/agent-reliability-repros) |
-| 📚 | Currently learning **agent development**: frameworks, tool use, memory & generative UI |
-| 🛡️ | Background in **network intrusion detection** with ML/DL — UNSW-NB15 · CICIDS2017 · NSL-KDD |
-| 👯 | Looking to collaborate on open-source **AI agent tooling** |
-| ⚡ | Fun fact: I enjoy breaking agents until they behave |
+## 个人项目 / Projects
+
+### Pi Native CRM · 已发布
+
+整理发布的 Pi Native CRM 开源快照与交互演示。可查看 Agent 如何读取 CRM 上下文、调用工具、等待人工审批并回放运行记录。保留原项目 MIT 许可证与署名。
+
+[源码](https://github.com/jayfeng7/crm-agent-lab) · [在线演示](https://jayfeng7.github.io/crm-agent-lab/) · [离线演示](https://github.com/jayfeng7/crm-agent-lab/releases/download/demo-offline-1/pi-native-crm-demo.zip) · [架构](https://github.com/jayfeng7/crm-agent-lab/tree/main/docs/architecture)
+
+`Next.js · TypeScript · Supabase · Pi Agent Core`
+
+### 考研英语 AI 助手 · 受邀试用 · 待公开
+
+面向英语一和英语二的移动端学习工具，提供作文批改、长难句分析、真题解析与流式答疑。学习历史保存在浏览器。
+
+`Next.js · TypeScript · SSE · IndexedDB`
+
+## 开源贡献 / Open Source
+
+| 上游仓库 | 我的贡献 | 已合并 PR |
+| --- | --- | --- |
+| [bytedance/deer-flow](https://github.com/bytedance/deer-flow) | 修复文档分块读取取消时的清理竞态。 | [#7496](https://github.com/bytedance/deer-flow/pull/7496) |
+| [upstash/context7](https://github.com/upstash/context7) | CLI 增删 MCP 配置时保留 JSONC 注释与布局。 | [#3508](https://github.com/upstash/context7/pull/3508) |
+| [QwenLM/qwen-code](https://github.com/QwenLM/qwen-code) | 添加回归测试，覆盖正在执行的 Agent 拒绝重复提交。 | [#13257](https://github.com/QwenLM/qwen-code/pull/13257) |
+| [vercel/ai](https://github.com/vercel/ai) | 修正 Telnyx 转写与语音示例使用的 SDK 导出名。 | [#21996](https://github.com/vercel/ai/pull/21996) |
+
+我也维护最小可运行复现，记录 Agent 取消、重试和工具边界问题。见 [Agent Reliability Repros](https://github.com/jayfeng7/agent-reliability-repros)。
+
+<details>
+<summary>贡献记录与验证链接 / Contribution history</summary>
 
 <!-- opensource:start -->
 ## 🌱 Open Source
@@ -93,6 +109,11 @@ Reports and reproducible diagnostics are contributions too. The table states who
 
 My merged [deer-flow PR #6829](https://github.com/bytedance/deer-flow/pull/6829) bounds image context re-injection with per-request budgets, newest-first admission and skip-before-read checks. The contribution was selected for the [XERJ Corpus Hub](https://hub.xerj.org/contributors/jayfeng7) as a reference example for AI coding agents. My contributor page is public; corpus distribution is pending licence review as of October 21, 2026.
 
+</details>
+
+<details>
+<summary>技术栈与 GitHub 活动 / Stack & activity</summary>
+
 ## 🛠️ Tech Stack
 
 <p align="center">
@@ -140,6 +161,8 @@ My merged [deer-flow PR #6829](https://github.com/bytedance/deer-flow/pull/6829)
     <img alt="contribution snake animation" src="https://raw.githubusercontent.com/jayfeng7/jayfeng7/output/github-contribution-grid-snake.svg" width="100%" />
   </picture>
 </p>
+
+</details>
 
 ---
 

@@ -13,30 +13,41 @@
 # 你的 GitHub 用户名（统计卡片、贪吃蛇都用它）
 username: jayfeng7
 
-# ---------- 顶部渐变横幅 ----------
+# ---------- 主页首屏 ----------
 header:
-  title: "Hi, I'm Jay"                                  # 大标题
-  subtitle: "AI Agents · LLM Apps · Security ML"        # 副标题（留空 "" 则不显示）
-  colors: "0:6a11cb,50:8e2de2,100:2575fc"               # 渐变色，格式 起点:色值,中间:色值,终点:色值
-                                                        # 例如橙色系: "0:ff9966,100:ff5e62"
+  title: "Jay"
+  subtitle: "AI Agents · Full-stack Applications · Agent Reliability"
+  banner: "assets/profile-banner.svg"
+  intro: "我做 AI Agent 应用，也关注工具调用、取消处理和安全边界。网络安全背景，目前在暨南大学学习。"
 
-# ---------- 打字机动画（一行一句，轮播显示） ----------
-typing:
-  - "Building reliable AI agents"
-  - "Exploring LLM apps & agent SDKs"
-  - "Network security meets machine learning"
-  - "Open source enthusiast"
+# 上线后，在对应项目的 links 下填写已验证的公开地址并更新 status。
+projects:
+  - name: "Pi Native CRM"
+    status: "已发布"
+    description: "整理发布的 Pi Native CRM 开源快照与交互演示。可查看 Agent 如何读取 CRM 上下文、调用工具、等待人工审批并回放运行记录。保留原项目 MIT 许可证与署名。"
+    stack: "Next.js · TypeScript · Supabase · Pi Agent Core"
+    links:
+      - { label: "源码", url: "https://github.com/jayfeng7/crm-agent-lab" }
+      - { label: "在线演示", url: "https://jayfeng7.github.io/crm-agent-lab/" }
+      - { label: "离线演示", url: "https://github.com/jayfeng7/crm-agent-lab/releases/download/demo-offline-1/pi-native-crm-demo.zip" }
+      - { label: "架构", url: "https://github.com/jayfeng7/crm-agent-lab/tree/main/docs/architecture" }
+  - name: "考研英语 AI 助手"
+    status: "受邀试用 · 待公开"
+    description: "面向英语一和英语二的移动端学习工具，提供作文批改、长难句分析、真题解析与流式答疑。学习历史保存在浏览器。"
+    stack: "Next.js · TypeScript · SSE · IndexedDB"
 
-# ---------- About Me（一行一条，可用 Markdown 加粗/链接/emoji） ----------
-about:
-  # 学校/学历信息已移到 GitHub 侧边栏（Settings → Public profile），想移回来取消注释即可：
-  # - "🎓 **M.S.** in Cyber Security @ [JNU](https://www.jnu.edu.cn) (Jinan University) · **B.S.** in Computer Science @ [NNU](https://www.njnu.edu.cn) (Nanjing Normal University)"
-  - "🔬 Researching **agent security** — minimal, runnable repros in [agent-reliability-repros](https://github.com/jayfeng7/agent-reliability-repros)"
-  - "📚 Currently learning **agent development**: frameworks, tool use, memory & generative UI"
-  - "🛡️ Background in **network intrusion detection** with ML/DL — UNSW-NB15 · CICIDS2017 · NSL-KDD"
-  - "👯 Looking to collaborate on open-source **AI agent tooling**"
-  - "⚡ Fun fact: I enjoy breaking agents until they behave"
-  # 开源贡献不再在 about 中罗列 —— 由下方 Open Source 区块自动统计展示（sxh313 风格表格）
+# 精选 PR 必须出现在下方 contribution_evidence.merged 中。
+featured_contributions:
+  - url: "https://github.com/bytedance/deer-flow/pull/7496"
+    summary: "修复文档分块读取取消时的清理竞态。"
+  - url: "https://github.com/upstash/context7/pull/3508"
+    summary: "CLI 增删 MCP 配置时保留 JSONC 注释与布局。"
+  - url: "https://github.com/QwenLM/qwen-code/pull/13257"
+    summary: "添加回归测试，覆盖正在执行的 Agent 拒绝重复提交。"
+  - url: "https://github.com/vercel/ai/pull/21996"
+    summary: "修正 Telnyx 转写与语音示例使用的 SDK 导出名。"
+
+research: "我也维护最小可运行复现，记录 Agent 取消、重试和工具边界问题。见 [Agent Reliability Repros](https://github.com/jayfeng7/agent-reliability-repros)。"
 
 # ---------- 开源贡献展示（Open Source，自动统计，无需手动维护） ----------
 # Actions 会调 GitHub API 统计"已被上游合并的 PR"，生成徽章 + 仓库表格。
