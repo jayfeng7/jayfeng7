@@ -22,7 +22,13 @@ social = cfg.get("social") or {}
 
 title = header.get("title") or f"Hi, I'm {user}"
 subtitle = (header.get("subtitle") or "").strip()
+colors = header.get("colors") or "0:6a11cb,50:8e2de2,100:2575fc"
 theme = stats_cfg.get("theme") or "tokyonight"
+
+
+def enc(s: str) -> str:
+    """URL-encode a query value, keeping it safe for & and ; separators."""
+    return quote(str(s), safe="")
 
 
 def badge(label: str, color: str, logo: str | None = None, logo_color: str = "white") -> str:
@@ -204,49 +210,40 @@ sections.append(
     "     本页面由 profile.yml 自动生成：请修改 profile.yml，不要直接改本文件。 -->"
 )
 
-# ---- portfolio first, with no third-party image services in the opening section ----
-banner = header.get("banner")
-sections.append(f"![{title}]({banner})" if banner else f"# {title}")
+# ---- header banner ----
+capsule = (
+    f"https://capsule-render.vercel.app/api?type=waving&color={colors}"
+    f"&height=160&section=header&text={enc(title)}&fontSize=48&fontColor=ffffff&fontAlignY=40"
+)
 if subtitle:
-    sections.append(f"**{subtitle}**")
-if header.get("intro"):
-    sections.append(header["intro"])
+    capsule += f"&desc={enc(subtitle)}&descSize=16&descAlignY=68"
+capsule += "&animation=fadeIn"
+sections.append('<p align="center">\n  ' + img(capsule, "header", ' width="100%"') + "\n</p>")
 
-projects = cfg.get("projects") or []
-if projects:
-    sections.append("## 个人项目 / Projects")
-    for project in projects:
-        sections.append(f'### {project["name"]} · {project["status"]}')
-        sections.append(project["description"])
-        links = " · ".join(
-            f'[{link["label"]}]({link["url"]})' for link in (project.get("links") or [])
-        )
-        sections.append(f'{links}\n\n`{project["stack"]}`' if links else f'`{project["stack"]}`')
-
-evidence = cfg.get("contribution_evidence") or {}
-merged_evidence = evidence.get("merged") or []
-featured = cfg.get("featured_contributions") or []
-if featured:
-    evidence_by_url = {item["url"]: item for item in merged_evidence}
-    rows = []
-    for feature in featured:
-        item = evidence_by_url[feature["url"]]
-        repo_url, pr_number = item["url"].rsplit("/pull/", 1)
-        summary = feature["summary"].replace("|", r"\|")
-        rows.append(
-            f'| [{item["project"]}]({repo_url}) | {summary} | [#{pr_number}]({item["url"]}) |'
-        )
+# ---- typing animation ----
+lines = [l for l in (cfg.get("typing") or []) if str(l).strip()]
+if lines:
+    src = (
+        "https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=22"
+        "&duration=3500&pause=1000&color=6C9BFF&center=true&vCenter=true&width=720&height=70"
+        f"&lines={';'.join(enc(l) for l in lines)}"
+    )
     sections.append(
-        "## 开源贡献 / Open Source\n\n"
-        "| 上游仓库 | 我的贡献 | 已合并 PR |\n"
-        "| --- | --- | --- |\n"
-        + "\n".join(rows)
+        f'<p align="center">\n  <a href="https://github.com/{user}">\n'
+        f"    {img(src, 'Typing SVG')}\n  </a>\n</p>"
     )
 
-if cfg.get("research"):
-    sections.append(cfg["research"])
+sections.append("---")
 
-sections.append("<details>\n<summary>贡献记录与验证链接 / Contribution history</summary>")
+# ---- about: card-style table (leading emoji becomes the icon cell) ----
+about = [l for l in (cfg.get("about") or []) if str(l).strip()]
+if about:
+    rows = []
+    for line in about:
+        m = re.match(r"^([^\x00-\x7F]+)\s*(.*)$", str(line), re.DOTALL)
+        icon, text = (m.group(1), m.group(2)) if m else ("✨", str(line))
+        rows.append(f"| {icon} | {str(text).replace('|', chr(92) + '|')} |")
+    sections.append("| 🧭 **About Me** | |\n|---|---|\n" + "\n".join(rows))
 
 # ---- open source showcase: live stats, fall back to the previous block on API failure ----
 os_cfg = cfg.get("opensource") or {}
@@ -265,6 +262,8 @@ if os_cfg.get("enabled", True):
         sections.append("<!-- opensource:start -->\n" + block + "\n<!-- opensource:end -->")
 
 # ---- concrete contribution evidence (curated in profile.yml) ----
+evidence = cfg.get("contribution_evidence") or {}
+merged_evidence = evidence.get("merged") or []
 if merged_evidence:
     rows = []
     for item in merged_evidence:
@@ -345,9 +344,6 @@ if ach:
     if notes:
         block += "\n\n" + "\n\n".join(notes)
     sections.append(block)
-
-sections.append("</details>")
-sections.append("<details>\n<summary>技术栈与 GitHub 活动 / Stack & activity</summary>")
 
 # ---- tech stack ----
 icons = [i for i in (cfg.get("skills_icons") or []) if str(i).strip()]
@@ -460,7 +456,6 @@ if stats_cfg.get("show_snake", True):
     )
 
 # ---- footer: single centered line with views badge and footer text ----
-sections.append("</details>")
 foot: list[str] = []
 if stats_cfg.get("show_visitors", True):
     foot.append(
