@@ -50,7 +50,7 @@ opensource:
 
 # ---------- 可核验的开源案例（合并记录与问题报告分别展示） ----------
 contribution_evidence:
-  checked_on: "2026-11-05"
+  checked_on: "2026-11-09"
   merged:
     - project: "upstash/context7"
       contribution: "Preserve JSONC comments and layout when the Context7 CLI adds or removes MCP server entries. Edit the targeted entry in place, with a full rewrite fallback for missing, empty or unparseable configurations."
