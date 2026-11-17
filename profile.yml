@@ -50,8 +50,12 @@ opensource:
 
 # ---------- 可核验的开源案例（合并记录与问题报告分别展示） ----------
 contribution_evidence:
-  checked_on: "2026-11-09"
+  checked_on: "2026-11-17"
   merged:
+    - project: "langflow-ai/langflow"
+      contribution: "Allow consecutive variable-list requests after concurrent database provider settings updates. Add regression coverage for standard, project-scoped, and prefixed deployment URLs."
+      url: "https://github.com/langflow-ai/langflow/pull/16104"
+      merged_on: "2026-11-17"
     - project: "upstash/context7"
       contribution: "Preserve JSONC comments and layout when the Context7 CLI adds or removes MCP server entries. Edit the targeted entry in place, with a full rewrite fallback for missing, empty or unparseable configurations."
       url: "https://github.com/upstash/context7/pull/3508"
