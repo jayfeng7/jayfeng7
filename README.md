@@ -28,7 +28,7 @@
 Projects that have merged my pull requests, refreshed automatically by Actions. The badges count every merge; the table names the top repositories and the last row carries the rest. Selected pull requests and reports are linked below.
 
 <p align="center">
-  <img src="https://img.shields.io/badge/MERGED_PRS-17-2EA043?style=flat-square&labelColor=24292F" alt="merged pull requests" /> &nbsp; <img src="https://img.shields.io/badge/PROJECTS-7-0969DA?style=flat-square&labelColor=24292F" alt="projects" /> &nbsp; <img src="https://img.shields.io/badge/UPSTREAM_STARS-391.7k-B45309?style=flat-square&labelColor=24292F" alt="upstream stars" /> &nbsp; <img src="https://img.shields.io/badge/REPORTS_COMPLETED-6-8957E5?style=flat-square&labelColor=24292F" alt="issue reports closed as completed" />
+  <img src="https://img.shields.io/badge/MERGED_PRS-17-2EA043?style=flat-square&labelColor=24292F" alt="merged pull requests" /> &nbsp; <img src="https://img.shields.io/badge/PROJECTS-7-0969DA?style=flat-square&labelColor=24292F" alt="projects" /> &nbsp; <img src="https://img.shields.io/badge/UPSTREAM_STARS-392.0k-B45309?style=flat-square&labelColor=24292F" alt="upstream stars" /> &nbsp; <img src="https://img.shields.io/badge/REPORTS_COMPLETED-6-8957E5?style=flat-square&labelColor=24292F" alt="issue reports closed as completed" />
 </p>
 
 | Project | ★ | Language | Merged |
@@ -38,7 +38,7 @@ Projects that have merged my pull requests, refreshed automatically by Actions. 
 | [<b>upstash/context7</b>](https://github.com/upstash/context7)<br>Context7 Platform -- Up-to-date docs for AI agents | 65.1k | <img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white" alt="TypeScript" /> | 1 |
 | [<b>QwenLM/qwen-code</b>](https://github.com/QwenLM/qwen-code)<br>An open-source AI coding agent that lives in your terminal. | 30.8k | <img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white" alt="TypeScript" /> | 1 |
 | [<b>vercel/ai</b>](https://github.com/vercel/ai)<br>The AI Toolkit for TypeScript. From the creators of Next.js, the AI SDK is a free open-source librar… | 28.1k | <img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white" alt="TypeScript" /> | 1 |
-| … and 2 more | 25.5k | — | 3 |
+| … and 2 more | 25.6k | — | 3 |
 
 *Merges only, counted across upstream projects; the report badge counts my issue reports closed as completed upstream, not additional merged PRs. Auto-refreshed by [.github/workflows/readme.yml](.github/workflows/readme.yml).*
 <!-- opensource:end -->
